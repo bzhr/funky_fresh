@@ -19,12 +19,23 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "about"
-    label: "About"
+    label: "За Нас"
     folder: "src/pages/about"
     create: false
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-      - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "за нас"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/za_nas"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "djs"
+    label: "DJs"
+    folder: "src/pages/djs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "DJ"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/djs"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}

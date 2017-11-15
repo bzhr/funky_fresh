@@ -1,9 +1,9 @@
 ---
 templateKey: 'about-page'
-path: /about
-title: A Dance With Dragons
+path: /
+title: За Funky Fresh
 ---
-The Dothraki do things in their own time, for their own reasons. Fire and blood. When you play the game of thrones, you win or you die. The Dothraki do things in their own time, for their own reasons. What is dead may never die.
+The FunkyFreshers do things in their own time, for their own reasons. Fire and blood. When you play the game of thrones, you win or you die. The Dothraki do things in their own time, for their own reasons. What is dead may never die.
 
 Bastards are born of passion, aren't they? We don't despise them in Dorne. When you play the game of thrones,   you win or you die. More pigeon pie, please. More pigeon pie, please. A forked purple lightning bolt, on black field speckled with four-pointed stars. The Knight of Lemonwood.
 

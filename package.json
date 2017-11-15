@@ -1,17 +1,18 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
+  "name": "funky-fresh-web-site",
+  "description": "Built on top of Netlify Gatsby Starter",
   "version": "1.0.0",
-  "author": "Austin Green",
+  "author": "Bozhidar Hristov",
   "dependencies": {
-    "bulma": "^0.6.0",
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-remark-images": "^1.5.18",
     "gatsby-source-filesystem": "^1.5.5",
-    "gatsby-transformer-remark": "^1.7.17"
+    "gatsby-transformer-remark": "^1.7.17",
+    "tachyons": "^4.9.0",
+    "tachyons-cli": "^1.2.0"
   },
   "keywords": [
     "gatsby"
@@ -22,7 +23,10 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "tachyons src/css/app.css > src/index.css --minify",
+    "predevelop": "npm run css",
+    "prebuild": "npm run css"
   },
   "devDependencies": {
     "prettier": "^1.7.4"

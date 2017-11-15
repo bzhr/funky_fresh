@@ -3,14 +3,16 @@ import Helmet from 'react-helmet';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
+  console.log("DATA");
+  console.log(data)
   return (
-    <section className="section">
+    <div  >
       <Helmet title={`Blog | ${post.frontmatter.title}`} />
-      <div className="container content">
-        <h1 className="title is-size-2 has-text-info is-bold-light">{post.frontmatter.title}</h1>
+      <div >
+        <h1 >{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
-    </section>
+    </div>
   );
 }
 

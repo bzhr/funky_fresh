@@ -1,32 +1,52 @@
+// import React from 'react';
+//
+// export default ({ data }) => {
+//   // const { data } = this.props
+//   console.log(this.props);
+//   console.log(data);
+//   const about = data.markdownRemark
+//   return (
+//     <section className="baskerville mw8 center">
+//       <h2 className="ttu tracked f-subheadline tc fw4">{about.frontmatter.title}</h2>
+//       <div className="f3" dangerouslySetInnerHTML={{ __html: about.excerpt }} />
+//     </section>
+//   );
+// };
+//
+// export const aboutPageQuery = graphql`
+//   query AboutPage($path: String!) {
+//     markdownRemark(frontmatter: { path: { eq: $path } }) {
+//       html
+//       frontmatter {
+//         path
+//         title
+//       }
+//     }
+//   }
+// `;
+
 import React from 'react';
 
 export default ({ data }) => {
-  const { markdownRemark: post } = data;
+  const post  = data.data.markdownRemark;
+  console.log("I am in about page, post");
+  console.log(post)
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-7">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-primary is-bold-light">{post.frontmatter.title}</h2>
-              <div className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
-            </div>
-          </div>
-          <div className="column is-5" />
-        </div>
-      </div>
-    </section>
+      <section className="black-70 baskerville mw8 center w-100 pa3 pa5-ns bt b--black-1">
+        <h2 className="ttu tracked f1 tc fw4">{post.frontmatter.title}</h2>
+        <div className="f3" dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+      </section>
   );
 };
 
-export const aboutPageQuery = graphql`
-  query AboutPage($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        path
-        title
-      }
-    }
-  }
-`;
+// export const aboutPageQuery = graphql`
+//   query aboutPage {
+//     markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
+//       excerpt(pruneLength: 400)
+//       frontmatter {
+//         path
+//         title
+//       }
+//     }
+//   }
+// `;

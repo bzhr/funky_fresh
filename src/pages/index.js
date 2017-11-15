@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
+import About from '../templates/about-page';
+import Djs from '../components/djs';
 
 export default class IndexPage extends React.Component {
   componentDidMount() {
@@ -16,14 +18,16 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const orangeBackgroung = {backgroundColor: "#F48120"}
     return (
-      <section className="section">
+      <section style={orangeBackgroung} className="" >
         <Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
-        <div className="container">
+        <About data={this.props}/>
+        <Djs data={"asdasd"} />
+        {/* <section >
+          <h2 className="athelas ph3 ph0-l">Blog</h2>
           {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
             return (
               <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
@@ -43,37 +47,39 @@ export default class IndexPage extends React.Component {
               </div>
             );
           })}
-        </div>
-        <script dangerouslySetInnerHTML={{ __html:
-        `if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", user => {
-            if (!user) {
-              window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-              });
-            }
-          });
-        }`
-        }}/>
+        </section> */}
       </section>
     );
   }
 }
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            path
-          }
-        }
+// Ova kveri e za /blog
+// export const pageQuery = graphql`
+//   query IndexQuery {
+//     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+//       edges {
+//         node {
+//           excerpt(pruneLength: 400)
+//           id
+//           html
+//           frontmatter {
+//             title
+//             templateKey
+//             date(formatString: "MMMM DD, YYYY")
+//             path
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
+export const frontPageQuery = graphql`
+  query frontPage {
+    markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
+      excerpt(pruneLength: 400)
+      frontmatter {
+        path
+        title
       }
     }
   }
