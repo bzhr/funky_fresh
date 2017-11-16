@@ -3,7 +3,7 @@ import mfdoom from '../pages/djs/img/mfdoom.jpg'
 
 export default ({ data }) => {
   return(
-    <section className="tc pa3 pa5-ns fl w-30">
+    <section className="tc pa3 pa5-ns fl w-33">
       <article className="hide-child relative ba b--black-20 mw5 center">
         <img src={mfdoom} className="db" alt="DJ Photo" />
         <div className="pa2 bt b--black-20">

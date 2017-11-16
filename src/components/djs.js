@@ -3,8 +3,10 @@ import DjCard from './dj-card';
 
 export default ({ data }) => {
   return(
-    <section className="w-100 bg-light-gray " >
-      <div className="">
+    <article className="w-100 bg-light-gray " >
+      <div className="cf pa2">
+        <h2 className="center black-70 ttu tracked f1 tc fw4">DJs</h2>
+        <div className="center" >
         <DjCard />
         <DjCard />
         <DjCard />
@@ -13,6 +15,7 @@ export default ({ data }) => {
         <DjCard />
         <DjCard />
       </div>
-    </section>
+      </div>
+    </article>
   );
 };
