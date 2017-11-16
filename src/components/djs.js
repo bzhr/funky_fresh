@@ -13,7 +13,6 @@ export default ({ data }) => {
         <DjCard />
         <DjCard />
         <DjCard />
-        <DjCard />
       </div>
       </div>
     </article>
