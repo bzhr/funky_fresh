@@ -29,12 +29,15 @@ import React from 'react';
 
 export default ({ data }) => {
   const post  = data.data.markdownRemark;
+  const orangeBackgroung = {backgroundColor: "#F48120"}
   console.log("I am in about page, post");
   console.log(post)
   return (
-      <section className="black-70 baskerville mw8 center w-100 pa3 pa5-ns bt b--black-1">
-        <h2 className="ttu tracked f1 tc fw4">{post.frontmatter.title}</h2>
-        <div className="f3" dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+      <section style={orangeBackgroung} className="black-70 baskerville w-100 pa3 pa5-ns bt b--black-1">
+        <div className="mw8 center">
+          <h2 className="ttu tracked f1 tc fw4">{post.frontmatter.title}</h2>
+          <div className="mw6 center f3" dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+        </div>
       </section>
   );
 };

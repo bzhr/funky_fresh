@@ -20,12 +20,14 @@ export default class IndexPage extends React.Component {
   render() {
     const orangeBackgroung = {backgroundColor: "#F48120"}
     return (
-      <section style={orangeBackgroung} className="" >
+      <section className="debug" >
         <Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
-        <About data={this.props}/>
-        <Djs data={"asdasd"} />
+        <div className="z-3">
+          <About data={this.props}/>
+          <Djs data={"asdasd"} />
+        </div>
         {/* <section >
           <h2 className="athelas ph3 ph0-l">Blog</h2>
           {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {

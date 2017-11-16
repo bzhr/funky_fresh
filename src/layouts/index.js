@@ -11,7 +11,7 @@ const Nav = () => (
   );
 
 const TemplateWrapper = ({ children }) => (
-  <div className="">
+  <div className="debug">
     <Helmet title="Funky Fresh" />
     <NavBar />
     {children()}
