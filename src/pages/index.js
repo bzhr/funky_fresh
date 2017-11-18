@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import About from '../templates/about-page';
+import About from '../components/about-page';
 import Djs from '../components/djs';
 
 export default class IndexPage extends React.Component {
@@ -19,68 +19,52 @@ export default class IndexPage extends React.Component {
 
   render() {
     const orangeBackgroung = {backgroundColor: "#F48120"}
+    const data = this.props.data.allMarkdownRemark.edges
+    const about = data.filter(post => post.node.frontmatter.templateKey == "about-page")[0].node
+    const djs = data.filter(post => post.node.frontmatter.templateKey == "dj-profile")
     return (
-      <section className="" >
+      <section className="debug" >
         <Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
-          <About data={this.props}/>
-          <Djs data={"asdasd"} />
-        {/* <section >
-          <h2 className="athelas ph3 ph0-l">Blog</h2>
-          {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
-            return (
-              <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
-                <p>
-                  <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-info is-small" to={post.frontmatter.path}>
-                    Keep Reading
-                  </Link>
-                </p>
-              </div>
-            );
-          })}
-        </section> */}
+          <About data={about}/>
+          <Djs data={djs}/>
       </section>
     );
   }
 }
 
-// Ova kveri e za /blog
-// export const pageQuery = graphql`
-//   query IndexQuery {
-//     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-//       edges {
-//         node {
-//           excerpt(pruneLength: 400)
-//           id
-//           html
-//           frontmatter {
-//             title
-//             templateKey
-//             date(formatString: "MMMM DD, YYYY")
-//             path
-//           }
-//         }
+
+// export const frontPageQuery = graphql`
+//   query frontPage {
+//     markdownRemark {
+//       excerpt(pruneLength: 400)
+//       frontmatter {
+//         path
+//         title
 //       }
 //     }
 //   }
 // `;
+
 export const frontPageQuery = graphql`
   query frontPage {
-    markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
-      excerpt(pruneLength: 400)
-      frontmatter {
-        path
-        title
+    allMarkdownRemark {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          html
+          id
+          frontmatter {
+            templateKey
+            path
+            date
+            title
+            fb
+            twitter
+            soundcloud
+          }
+        }
       }
-    }
   }
-`;
+}`;

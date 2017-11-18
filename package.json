@@ -11,6 +11,7 @@
     "gatsby-remark-images": "^1.5.18",
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
+    "npm": "^5.5.1",
     "tachyons": "^4.9.0",
     "tachyons-cli": "^1.2.0"
   },
