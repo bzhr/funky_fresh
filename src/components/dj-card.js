@@ -29,7 +29,7 @@ export default ({ data }) => {
         </div>
         <a className="w-100 link db bg-animate bg-near-black hover-bg-black-50 f6 br1" href="#">
           <div className="w-100 h-100 dt">
-            <p className="vh-mid h-100 lh-copy tc white">Download promo pack</p>
+            <p className="fw4 f6 vh-mid h-100 lh-copy tc white">Download promo pack</p>
           </div>
         </a>
       </article>
