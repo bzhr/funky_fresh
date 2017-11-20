@@ -27,11 +27,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     }
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       let tKey = node.frontmatter.templateKey
-      console.log(tKey)
-      console.log(tKey == "about-page")
       if (tKey == 'dj-profile') {
-        console.log("I am creating pages!");
-        console.log("Creating page for", tKey)
         createPage({
           path: node.frontmatter.path,
           component: path.resolve(`src/templates/${String(node.frontmatter.templateKey)}.js`),

@@ -23,7 +23,7 @@ export default class IndexPage extends React.Component {
     const about = data.filter(post => post.node.frontmatter.templateKey == "about-page")[0].node
     const djs = data.filter(post => post.node.frontmatter.templateKey == "dj-profile")
     return (
-      <section className="debug" >
+      <section className="" >
         <Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>

@@ -12,6 +12,7 @@
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
     "npm": "^5.5.1",
+    "react-soundcloud-widget": "^2.0.4",
     "tachyons": "^4.9.0",
     "tachyons-cli": "^1.2.0"
   },

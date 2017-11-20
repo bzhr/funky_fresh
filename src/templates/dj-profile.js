@@ -1,29 +1,25 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+import Soundcloud from 'react-soundcloud-widget';
+import SocialMediaButton from '../components/SocialMediaButton';
+import fb from '../img/facebook.svg';
+import twitter from '../img/twitter.svg';
+import sc from '../img/soundcloud.svg';
 
 
 export default function Template({ data }) {
-  console.log(data);
   return (
-      <section className="">
-        I am a DJJJJJ!!!
-        <div>HEEEEEEEEEEY</div>
+      <section className="bg-light-gray pa5-ns bt baskerville w-100 pa3">
+        <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
+        <h1 className="ttu tracked f1 fw4">{data.markdownRemark.frontmatter.title}</h1>
+        <SocialMediaButton icon={fb} link={data.markdownRemark.frontmatter.fb} />
+        <SocialMediaButton icon={twitter} link={data.markdownRemark.frontmatter.twitter} />
+        <SocialMediaButton icon={sc} link={data.markdownRemark.frontmatter.soundcloud} />
+        <div className="measure lh-copy" dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}></div>
+        <Soundcloud url={data.markdownRemark.frontmatter.promoMix} />
       </section>
   );
 };
-
-
-// export default function Template({ data }) {
-//   const { markdownRemark: post } = data;
-//   return (
-//     <section className="section">
-//       <Helmet title={`Blog | ${post.frontmatter.title}`} />
-//       <div className="container content">
-//         <h1 className="title is-size-2 has-text-info is-bold-light">{post.frontmatter.title}</h1>
-//         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-//       </div>
-//     </section>
-//   );
-// }
 
 export const DjProfileQuery = graphql`
 query djProfile($path: String!) {
@@ -31,39 +27,14 @@ query djProfile($path: String!) {
     html
     frontmatter {
       templateKey
-      date(formatString: "MMMM DD, YYYY")
       path
       title
       fb
       twitter
       soundcloud
+      promoMix
     }
   }
   }
 
 `
-
-
-
-{/* <section >
-  <h2 className="athelas ph3 ph0-l">Blog</h2>
-  {posts.filter(post => post.node.frontmatter.templateKey === 'blog-post').map(({ node: post }) => {
-    return (
-      <div className="content" style={{ border: '1px solid #eaecee', padding: '2em 4em' }} key={post.id}>
-        <p>
-          <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-          <span> &bull; </span>
-          <small>{post.frontmatter.date}</small>
-        </p>
-        <p>
-          {post.excerpt}
-          <br />
-          <br />
-          <Link className="button is-info is-small" to={post.frontmatter.path}>
-            Keep Reading
-          </Link>
-        </p>
-      </div>
-    );
-  })}
-</section> */}

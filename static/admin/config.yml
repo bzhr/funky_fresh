@@ -42,3 +42,4 @@ collections:
       - {label: "Facebook", name: "fb", widget: "string"}
       - {label: "Twitter", name: "twitter", widget: "string"}
       - {label: "Soundcloud", name: "soundcloud", widget: "string"}
+      - {label: "Promo Mix", name: "promoMix", widget: "string"}
