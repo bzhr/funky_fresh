@@ -11,6 +11,41 @@ export default ({ data }) => {
             <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
           )
         })}
+        {data.map(djInfo => {
+          return(
+            <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
+          )
+        })}
+        {data.map(djInfo => {
+          return(
+            <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
+          )
+        })}
+        {data.map(djInfo => {
+          return(
+            <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
+          )
+        })}
+        {data.map(djInfo => {
+          return(
+            <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
+          )
+        })}
+        {data.map(djInfo => {
+          return(
+            <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
+          )
+        })}
+        {data.map(djInfo => {
+          return(
+            <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
+          )
+        })}
+        {data.map(djInfo => {
+          return(
+            <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
+          )
+        })}
       </div>
     </article>
   );
