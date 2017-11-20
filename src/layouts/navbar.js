@@ -9,7 +9,6 @@ export default () => {
        <nav className="6 fw6 ttu tracked">
          <Link className="link dim white dib mr3" style={textStyle} to="/" title="Funky Fresh">Funky Fresh</Link>
          <Link className="link dim white dib mr3" style={textStyle} to="/blog" title="Blog">Blog</Link>
-         <Link className="link dim white dib mr3" style={textStyle} to="/djs" title="DJs">DJs</Link>
        </nav>
     </header>
   );
