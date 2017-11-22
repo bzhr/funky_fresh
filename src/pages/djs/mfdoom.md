@@ -6,7 +6,7 @@ fb: https://www.facebook.com/mfdoom/
 twitter: https://twitter.com/mfdoom?lang=en
 soundcloud: https://soundcloud.com/mf-doom
 promoMix: https://soundcloud.com/utcalavera/dj-food-stamp-mf-doom
-img: ../pages/djs/img/mfdoom.jpg
+img: /img/mfdoom.jpg
 ---
 
 ![graphql](/img/mfdoom.jpg)

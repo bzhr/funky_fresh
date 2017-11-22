@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 import SocialMediaButton from './SocialMediaButton';
 
 import mfdoom from '../pages/djs/img/mfdoom.jpg';
@@ -18,9 +19,9 @@ export default ({ data }) => {
   console.log(img, drazidrags, mfdoom);
   return(
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
-      <article className="center hide-child relative ba b--black- mw5 db">
+      <article className="center hide-child relative ba b--silver mw5 db">
         <Link to={djUrl}>
-          <img src={img} className="db" alt="DJ Photo" />
+          <img src={drazidrags} className="db" alt="DJ Photo" />
         </Link>
         <div className="bg-white pa2 bt b--black-20">
           <Link className="black-70 ttu tracked tc fw4 f4 db link black hover-black-60" to={djUrl}>{title}</Link>
@@ -30,7 +31,7 @@ export default ({ data }) => {
             <SocialMediaButton icon={sc} link={scLink} />
           </div>
         </div>
-        <a className="w-100 link db bg-animate bg-near-black hover-bg-black-50 f6 br1" href="#">
+        <a className="w-100 link db bg-animate bg-near-black hover-bg-silver f6 br1" href="#">
           <div className="w-100 h-100 dt">
             <p className="fw4 f6 vh-mid h-100 lh-copy tc white">Download promo pack</p>
           </div>

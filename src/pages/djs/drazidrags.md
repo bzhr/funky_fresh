@@ -6,7 +6,7 @@ fb: https://www.facebook.com/djdrazidrags/
 twitter: https://twitter.com/drazidrags
 soundcloud: https://www.mixcloud.com/drazidrags/
 promoMix: https://soundcloud.com/utcalavera/dj-food-stamp-mf-doom
-img: ../pages/djs/img/drazidrags.jpg
+img: /img/drazidrags.jpg
 
 ---
 
