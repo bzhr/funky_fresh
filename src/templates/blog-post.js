@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
-  console.log(data)
   return(
     <section className="bg-light-gray pa5-ns bt baskerville w-100 pa3">
       <Helmet title={`Blog | ${post.frontmatter.title}`} />

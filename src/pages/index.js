@@ -63,6 +63,7 @@ export const frontPageQuery = graphql`
             fb
             twitter
             soundcloud
+            img
           }
         }
       }
