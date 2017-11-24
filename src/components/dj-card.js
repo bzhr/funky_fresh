@@ -19,7 +19,8 @@ export default ({ data }) => {
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
       <article className="center hide-child relative ba b--silver mw5 db">
         <Link to={djUrl}>
-          <Img resolutions={data.img.childImageSharp.resolutions} className="db" alt="DJ Photo" />
+          {/* <Img resolutions={data.img.childImageSharp.resolutions} className="db" alt="DJ Photo" /> */}
+          <img src={img} className="db" alt="DJ Photo" />
         </Link>
         <div className="bg-white pa2 bt b--black-20">
           <Link className="black-70 ttu tracked tc fw4 f4 db link black hover-black-60" to={djUrl}>{title}</Link>
