@@ -6,13 +6,13 @@ export default () => {
   return (
     // Add "fixed" class to header to fix header on scrolling
     <header className="z-999 fixed bg-near-black w-100 pa2">
-      <div className="fl h-100 w-40">
+      <div className="fl h-100 w-50">
         <nav className="dtc v-mid h3 fw6 ttu tracked">
          <Link className="link dim white dib mr3" style={textStyle} to="/" title="Funky Fresh">Funky Fresh</Link>
          <Link className="link dim white dib mr3" style={textStyle} to="/blog" title="Blog">Blog</Link>
         </nav>
       </div>
-      <div className="fr w-60 h3 dtc v-mid">
+      <div className="fr w-50 h3 dtc v-mid">
         <div className="fr h-100 dt pa2">
           <div className="dtc v-mid">
             <a className="b--light-gray bg-animate hover-bg-gray" href="https://www.mixcloud.com/Funky_Fresh/" title="Mixcloud" target="_blank">
