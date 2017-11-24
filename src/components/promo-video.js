@@ -6,7 +6,7 @@ export default () => {
       <div className="promo-video mw8 center">
         <div className="pa3 pa5-ns w-100 tc center">
           <iframe
-            className="center w-80-l w-100-m w-100-ns"
+            className="center w-80-l w-100-m w-100-ns w-80-l w-100-m w-100-ns"
             // width="560"
             height="450"
             src="https://www.youtube.com/embed/hqFmPZzxEEE?rel=0&amp;controls=0&amp;showinfo=0"
