@@ -9,9 +9,9 @@ import sc from '../img/soundcloud.svg';
 
 export default function Template({ data }) {
   return (
-      <section className="bg-light-gray pa5-ns bt baskerville w-100 pa3">
+      <section className="bg-light-gray pa5-ns bt baskerville w-100 pa3 pa5-ns">
         <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
-        <h1 className="ttu tracked f1 fw4">{data.markdownRemark.frontmatter.title}</h1>
+        <h1 className="ttu tracked f1 fw4 pt4">{data.markdownRemark.frontmatter.title}</h1>
         <SocialMediaButton icon={fb} link={data.markdownRemark.frontmatter.fb} />
         <SocialMediaButton icon={twitter} link={data.markdownRemark.frontmatter.twitter} />
         <SocialMediaButton icon={sc} link={data.markdownRemark.frontmatter.soundcloud} />
