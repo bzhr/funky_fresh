@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import About from '../components/about-page';
+import PromoVideo from '../components/promo-video';
 import Djs from '../components/djs';
 
 export default class IndexPage extends React.Component {
@@ -28,24 +29,12 @@ export default class IndexPage extends React.Component {
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
           <About data={about}/>
+          <PromoVideo />
           <Djs data={djs}/>
       </section>
     );
   }
 }
-
-
-// export const frontPageQuery = graphql`
-//   query frontPage {
-//     markdownRemark {
-//       excerpt(pruneLength: 400)
-//       frontmatter {
-//         path
-//         title
-//       }
-//     }
-//   }
-// `;
 
 export const frontPageQuery = graphql`
   query frontPage {
@@ -63,9 +52,19 @@ export const frontPageQuery = graphql`
             fb
             twitter
             soundcloud
-            img
+            img {
+              childImageSharp {
+                original {
+                  src
+                }
+                resolutions(width: 250, height: 300){
+                  ...GatsbyImageSharpResolutions
+                }
+              }
+            }
           }
         }
       }
+    }
   }
-}`;
+`;

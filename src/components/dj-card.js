@@ -3,8 +3,6 @@ import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import SocialMediaButton from './SocialMediaButton';
 
-import mfdoom from '../pages/djs/img/mfdoom.jpg';
-import drazidrags from '../pages/djs/img/drazidrags.jpg';
 import fb from '../img/facebook.svg';
 import twitter from '../img/twitter.svg';
 import sc from '../img/soundcloud.svg';
@@ -15,13 +13,13 @@ export default ({ data }) => {
   const scLink = data.soundcloud
   const twitterLink = data.twitter
   const djUrl = data.path
-  const img =  data.img
-  console.log(img, drazidrags, mfdoom);
+  const img =  data.img.childImageSharp.original.src
+  console.log(data.img.childImageSharp.resolutions);
   return(
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
       <article className="center hide-child relative ba b--silver mw5 db">
         <Link to={djUrl}>
-          <img src={drazidrags} className="db" alt="DJ Photo" />
+          <Img resolutions={data.img.childImageSharp.resolutions} className="db" alt="DJ Photo" />
         </Link>
         <div className="bg-white pa2 bt b--black-20">
           <Link className="black-70 ttu tracked tc fw4 f4 db link black hover-black-60" to={djUrl}>{title}</Link>
