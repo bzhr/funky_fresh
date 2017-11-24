@@ -25,19 +25,18 @@ export default function Template({ data }) {
 };
 
 export const DjProfileQuery = graphql`
-query djProfile($path: String!) {
-  markdownRemark(frontmatter: { path: {eq: $path } }) {
-    html
-    frontmatter {
-      templateKey
-      path
-      title
-      fb
-      twitter
-      soundcloud
-      promoMix
+  query djProfile($path: String!) {
+    markdownRemark(frontmatter: { path: {eq: $path } }) {
+      html
+      frontmatter {
+        templateKey
+        path
+        title
+        fb
+        twitter
+        soundcloud
+        promoMix
+      }
     }
   }
-  }
-
 `
