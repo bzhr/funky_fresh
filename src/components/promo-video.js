@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => {
   return(
-    <section className="bg-light-gray center">
+    <section className="bg-near-black center">
       <div className="promo-video mw8 center">
         <div className="pa3 pa5-ns w-100 tc center">
           <iframe
