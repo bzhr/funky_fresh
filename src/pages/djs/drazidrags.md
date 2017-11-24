@@ -3,7 +3,7 @@ templateKey: 'dj-profile'
 path: /drazidrags
 title: Drazi Drags
 fb: https://www.facebook.com/djdrazidrags/
-twitter: https://twitter.com/drazidrags
+twitter: https://twitter.com/drazi_drags
 soundcloud: https://www.mixcloud.com/drazidrags/
 promoMix: https://soundcloud.com/utcalavera/dj-food-stamp-mf-doom
 img: ./img/drazidrags.jpg

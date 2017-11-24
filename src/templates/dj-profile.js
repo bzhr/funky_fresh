@@ -8,13 +8,16 @@ import sc from '../img/soundcloud.svg';
 
 
 export default function Template({ data }) {
+  const fbLink = data.markdownRemark.frontmatter.fb
+  const twitterLink = data.markdownRemark.frontmatter.twitter
+  const scLink = data.markdownRemark.frontmatter.soundcloud
   return (
       <section className="bg-light-gray pa5-ns bt baskerville w-100 pa3 pa5-ns">
         <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
         <h1 className="ttu tracked f1 fw4 pt4">{data.markdownRemark.frontmatter.title}</h1>
-        <SocialMediaButton icon={fb} link={data.markdownRemark.frontmatter.fb} />
-        <SocialMediaButton icon={twitter} link={data.markdownRemark.frontmatter.twitter} />
-        <SocialMediaButton icon={sc} link={data.markdownRemark.frontmatter.soundcloud} />
+        {fbLink ? (<SocialMediaButton icon={fb} link={fbLink} />) : null}
+        {twitterLink ? (<SocialMediaButton icon={twitter} link={twitterLink} />) : null}
+        {scLink ? (<SocialMediaButton icon={sc} link={scLink} />) : null}
         <div className="measure lh-copy" dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}></div>
         <Soundcloud url={data.markdownRemark.frontmatter.promoMix} />
       </section>
