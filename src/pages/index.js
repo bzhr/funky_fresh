@@ -19,7 +19,6 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
-    const orangeBackgroung = {backgroundColor: "#F48120"}
     const data = this.props.data.allMarkdownRemark.edges
     const about = data.filter(post => post.node.frontmatter.templateKey == "about-page")[0].node
     const djs = data.filter(post => post.node.frontmatter.templateKey == "dj-profile")
@@ -28,9 +27,9 @@ export default class IndexPage extends React.Component {
         <Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
-          <About data={about}/>
-          <PromoVideo />
-          <Djs data={djs}/>
+        <About data={about}/>
+        <PromoVideo />
+        <Djs data={djs}/>
       </section>
     );
   }
@@ -47,11 +46,12 @@ export const frontPageQuery = graphql`
           frontmatter {
             templateKey
             path
-            date
             title
             fb
             twitter
             soundcloud
+            youtube
+            mail
             img {
               childImageSharp {
                 original {

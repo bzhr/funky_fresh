@@ -5,9 +5,10 @@ title: Drazi Drags
 fb: https://www.facebook.com/djdrazidrags/
 twitter: https://twitter.com/drazi_drags
 soundcloud: https://www.mixcloud.com/drazidrags/
-promoMix: https://soundcloud.com/utcalavera/dj-food-stamp-mf-doom
 img: ./img/drazidrags.jpg
-
+youtube: https://www.youtube.com/user/dragandadrags
+mail: dragandadrags [at] hotmail.com
+promoMix: https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/
 ---
 
 ![graphql](/img/drazidrags.jpg)
