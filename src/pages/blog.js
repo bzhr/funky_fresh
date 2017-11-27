@@ -7,8 +7,8 @@ export default function Template({ data }) {
   return(
     <div className="bg-light-gray pa5-ns bt baskerville w-100 pa3">
       <Helmet title={`Funky Fresh | Blog`} />
-      <section className="pa3 mw7 center avenir">
-        <h2 className="baskerville fw1 ph3 ph0-l">Blog</h2>
+      <section className="pa3 pt4 mw7 center avenir">
+        <h2 className="baskerville fw1 ph3 pt4 ph0-l">Blog</h2>
         {blogPosts.map(({node: post}) => {
           return (
             <article key={post.id} className="content pa2 bt bb b--black-10">
