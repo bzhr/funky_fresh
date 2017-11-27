@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 export default () => {
   return (
     // Add "fixed" class to header to fix header on scrolling
-    <header className="z-999 fixed bg-near-black w-100 pa2">
+    <header className="z-999 fixed bg-near-black w-100 pa2 helvetica">
       <div className="fl h-100 w-50">
         <nav className="dtc v-mid h3 fw6 ttu tracked">
          <Link className="link dim light-gray dib mr3" to="/" title="Funky Fresh">Funky Fresh</Link>
