@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import Soundcloud from 'react-soundcloud-widget';
+import URL from 'url-parse';
 
 import SocialMediaButton from '../components/SocialMediaButton';
 import MixcloudEmbed from '../components/MixcloudEmbed';
@@ -21,10 +22,9 @@ export default function Template({ data }) {
 
   let url = ""
   if (promoMixLink.includes("mixcloud")) {
-    const parser = document.createElement('a')
-    parser.href = promoMixLink
-    const user = parser.pathname.split("/")[1]
-    const mixName  = parser.pathname.split("/")[2]
+    url = URL(promoMixLink)
+    const user = url.pathname.split("/")[1]
+    const mixName  = url.pathname.split("/")[2]
     // url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2F${user}%2F${mixName}%2F`
     url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&autoplay=0&feed=%2F${user}%2F${mixName}%2F`
   }

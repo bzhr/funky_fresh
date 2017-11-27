@@ -18,7 +18,8 @@
     "react-share": "^1.17.0",
     "react-soundcloud-widget": "^2.0.4",
     "tachyons": "^4.9.0",
-    "tachyons-cli": "^1.2.0"
+    "tachyons-cli": "^1.2.0",
+    "url-parse": "^1.2.0"
   },
   "keywords": [
     "gatsby"
