@@ -27,9 +27,8 @@ export default function Template({ data }) {
     const mixName  = url.pathname.split("/")[2]
     url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&autoplay=0&feed=%2F${user}%2F${mixName}%2F`
   }
-  console.log("embed url", url)
   return (
-      <section className="bg-light-gray pa5-ns bt baskerville w-100 pa3 pa5-ns">
+      <section className="bg-light-gray pa5-ns bt baskerville w-100 pa3">
         <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
         <h1 className="ttu tracked f1 fw4 pt4">{data.markdownRemark.frontmatter.title}</h1>
         {fbLink ? (<SocialMediaButton icon={fb} link={fbLink} />) : null}

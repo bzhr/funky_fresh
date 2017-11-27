@@ -21,7 +21,7 @@ class SocialLinks extends Component {
     const GooglePlusIcon = generateShareIcon("google");
     const LinkedinIcon = generateShareIcon("linkedin");
     const RedditIcon = generateShareIcon("reddit");
-    const iconSize = 48
+    const iconSize = 42
     const filter = count => (count > 0 ? count : "");
 
     return (

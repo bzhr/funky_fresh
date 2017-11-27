@@ -11,16 +11,16 @@ export default function Template({ data }) {
         <h2 className="baskerville fw1 ph3 ph0-l">Blog</h2>
         {blogPosts.map(({node: post}) => {
           return (
-            <article key={post.id} class="content pa2 bt bb b--black-10">
+            <article key={post.id} className="content pa2 bt bb b--black-10">
               <Link className="db pv4 ph3 ph0-l no-underline black dim" to={post.frontmatter.path}>
               <div className="flex flex-column flex-row-ns">
                 <div className="pr3-ns mb4 mb0-ns w-100 w-40-ns">
                   <img src="http://mrmrs.github.io/photos/cpu.jpg" className="db" alt="Photo of a dimly lit room with a computer interface terminal."/>
                 </div>
-                <div class="w-100 w-60-ns pl3-ns">
-                <h1 class="f3 fw1 baskerville mt0 lh-title">{post.frontmatter.title}</h1>
-                <p class="f6 f5-l lh-copy">{post.excerpt}</p>
-                <p class="f6 lh-copy mv0">{post.frontmatter.date}</p>
+                <div className="w-100 w-60-ns pl3-ns">
+                <h1 className="f3 fw1 baskerville mt0 lh-title">{post.frontmatter.title}</h1>
+                <p className="f6 f5-l lh-copy">{post.excerpt}</p>
+                <p className="f6 lh-copy mv0">{post.frontmatter.date}</p>
                 </div>
               </div>
               </Link>
