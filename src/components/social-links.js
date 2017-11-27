@@ -5,7 +5,6 @@ import config from "../../gatsby-config";
 class SocialLinks extends Component {
   render() {
     const { postNode, postPath } = this.props;
-    console.log(postNode.excerpt);
     const post = postNode.frontmatter;
     const url = config.siteMetadata.siteUrl + postPath;
     const {

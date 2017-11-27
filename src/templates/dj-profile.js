@@ -25,7 +25,6 @@ export default function Template({ data }) {
     url = URL(promoMixLink)
     const user = url.pathname.split("/")[1]
     const mixName  = url.pathname.split("/")[2]
-    // url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2F${user}%2F${mixName}%2F`
     url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&autoplay=0&feed=%2F${user}%2F${mixName}%2F`
   }
   console.log("embed url", url)

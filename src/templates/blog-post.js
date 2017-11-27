@@ -4,7 +4,6 @@ import SocialLinks from '../components/social-links';
 
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
-  console.log(post.frontmatter.path);
   return(
     <section className="bg-light-gray pa5-ns bt baskerville w-100 pa3">
       <Helmet title={`Blog | ${post.frontmatter.title}`} />
