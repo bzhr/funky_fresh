@@ -8,7 +8,7 @@ export default ({ data }) => {
           <div className="pt5 pb4 mw5 center">
             <img className="w-100 svg" style={{svg: "white"}} src={logo} alt="Funky Fresh Logo" />
           </div>
-          <div className="pa3 tc measure white mw6 center f3" dangerouslySetInnerHTML={{ __html: data.excerpt }}/>
+          <div className="lh-copy pa3 tc measure white mw6 center f3" dangerouslySetInnerHTML={{ __html: data.excerpt }}/>
         </div>
       </section>
   );
