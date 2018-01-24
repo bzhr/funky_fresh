@@ -4,17 +4,17 @@
   "version": "1.0.0",
   "author": "Bozhidar Hristov",
   "dependencies": {
-    "gatsby": "^1.9.63",
-    "gatsby-image": "^1.0.24",
-    "gatsby-link": "^1.6.21",
-    "gatsby-plugin-react-helmet": "^1.0.5",
-    "gatsby-plugin-sass": "^1.0.12",
-    "gatsby-plugin-sharp": "^1.6.21",
-    "gatsby-remark-images": "^1.5.18",
-    "gatsby-source-filesystem": "^1.5.5",
-    "gatsby-transformer-remark": "^1.7.17",
-    "gatsby-transformer-sharp": "^1.6.14",
-    "npm": "^5.5.1",
+    "gatsby": "^1.9.126",
+    "gatsby-image": "^1.0.27",
+    "gatsby-link": "^1.6.30",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sass": "^1.0.14",
+    "gatsby-plugin-sharp": "^1.6.22",
+    "gatsby-remark-images": "^1.5.33",
+    "gatsby-source-filesystem": "^1.5.9",
+    "gatsby-transformer-remark": "^1.7.22",
+    "gatsby-transformer-sharp": "^1.6.15",
+    "npm": "^5.6.0",
     "react-share": "^1.17.0",
     "react-soundcloud-widget": "^2.0.4",
     "tachyons": "^4.9.0",
@@ -36,6 +36,6 @@
     "prebuild": "npm run css"
   },
   "devDependencies": {
-    "prettier": "^1.7.4"
+    "prettier": "^1.8.2"
   }
 }

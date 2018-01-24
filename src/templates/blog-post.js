@@ -9,8 +9,8 @@ export default function Template({ data }) {
       <Helmet title={`Blog | ${post.frontmatter.title}`} />
       <article className="">
         <h1 className="f3 f1-m f-headline-l ttu tracked f1 fw3 pt5">{post.frontmatter.title}</h1>
-        <SocialLinks postPath={post.frontmatter.path} postNode={data.markdownRemark} />
         <div className="measure lh-copy" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <SocialLinks postPath={post.frontmatter.path} postNode={data.markdownRemark} />
       </article>
     </section>
   );
