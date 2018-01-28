@@ -28,7 +28,6 @@ export default class IndexPage extends React.Component {
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
         <About data={about}/>
-        <PromoVideo />
         <Djs data={djs}/>
       </section>
     );
