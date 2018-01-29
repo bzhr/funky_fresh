@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import About from '../components/about-page';
+import Main from '../components/main-page';
 import PromoVideo from '../components/promo-video';
 import Djs from '../components/djs';
 
@@ -27,7 +27,7 @@ export default class IndexPage extends React.Component {
         <Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
-        <About data={about}/>
+        <Main data={about}/>
         <Djs data={djs}/>
       </section>
     );
