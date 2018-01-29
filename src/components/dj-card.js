@@ -26,7 +26,7 @@ export default ({ data }) => {
           <img src={img} className="db" alt="DJ Photo" />
         </Link>
         <div className="bg-white pa2 bt b--black-20">
-          <Link className="helvetica black-70 ttu tracked tc fw5-l f5-l fw5-m f5-m fw7-ns f7-ns db link black hover-black-60" to={djUrl}>{title}</Link>
+          <Link className="black-70 ttu tracked tc fw5-l f5-l fw5-m f5-m fw7-ns f7-ns db link black hover-black-60" style={{fontFamily: "camingodos-web"}} to={djUrl}>{title}</Link>
           <div className="pv2">
             {fbLink ? ( <SocialMediaButton icon={fb} link={fbLink} />) : null  }
             {twitterLink ? ( <SocialMediaButton icon={twitter} link={twitterLink} />) : null  }

@@ -5,7 +5,7 @@ import SocialLinks from '../components/social-links';
 export default function Template({ data }) {
   const { markdownRemark: post } = data;
   return(
-    <section className="bg-light-gray pa5-ns bt helvetica w-100 pa3">
+    <section className="bg-light-gray pa5-ns bt w-100 pa3" style={{fontFamily: "camingodos-web"}}>
       <Helmet title={`Blog | ${post.frontmatter.title}`} />
       <article className="">
         <h1 className="f3 f1-m f-headline-l ttu tracked f1 fw3 pt5">{post.frontmatter.title}</h1>
