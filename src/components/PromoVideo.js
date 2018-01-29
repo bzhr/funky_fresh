@@ -10,7 +10,7 @@ const videoStyle = {
 export default ({ data }) => {
   return (
     <div
-      className="debug vh-100 bg-near-black"
+      className="vh-100 bg-near-black"
     >
       <video
         poster={promoSlika}
