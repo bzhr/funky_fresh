@@ -4,15 +4,22 @@ module.exports = {
     siteUrl: 'https://funky-fresh.netlify.com'
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
-    'gatsby-transformer-sharp',
-    'gatsby-image',
+    `gatsby-transformer-sharp`,
+    `gatsby-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages'
+      }
+    },
+    {
+    resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/img/`
       }
     },
     {
@@ -22,7 +29,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800,
+              maxWidth: 590,
               linkImagesToOriginal: false,
               sizeByPixelDensity: true,
             }

@@ -1,11 +1,11 @@
 import React from "react";
-import promoSlika from "../img/promo-slika.jpg";
+// import promoSlika from "../img/promo-slika.jpg";
 
 const videoUrl = require("../img/promo-video.mp4");
 const videoStyle = {
   display: "block",
-  backgroundImage: "url(../img/promo-slika.jpg)",
-  backgroundSize: "cover"
+  // backgroundImage: "url(../img/promo-slika.jpg)",
+  // backgroundSize: "cover"
 };
 
 export default ({ data }) => {

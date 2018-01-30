@@ -20,14 +20,15 @@ export default class IndexPage extends React.Component {
 
   render() {
     const data = this.props.data.allMarkdownRemark.edges
+    const logoData = this.props.data.file.childImageSharp
     const about = data.filter(post => post.node.frontmatter.templateKey == "about-page")[0].node
     const djs = data.filter(post => post.node.frontmatter.templateKey == "dj-profile")
     return (
-      <section className="" >
+      <section className="bg-near-black" >
         <Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>
-        <Main data={about}/>
+        <Main about={about} logoData={logoData}/>
         <Djs data={djs}/>
       </section>
     );
@@ -57,12 +58,19 @@ export const frontPageQuery = graphql`
                   src
                 }
                 resolutions(width: 250, height: 300){
-                  ...GatsbyImageSharpResolutions
+                  src
                 }
               }
             }
           }
         }
+      }
+    }
+    file(relativePath: {eq: "funkyfreshdj_white.png"}) {
+      childImageSharp {
+        sizes(maxWidth: 200) {
+          ...GatsbyImageSharpSizes
+        } 
       }
     }
   }

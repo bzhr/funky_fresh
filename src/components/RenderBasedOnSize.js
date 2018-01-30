@@ -27,7 +27,6 @@ class RenderBasedOnSize extends React.Component {
   render() {
     const isDesktop = this.state.isDesktop;
     const promoVideo = <PromoVideo />
-    console.log(isDesktop);
 
     return (
       <div>
