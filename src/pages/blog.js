@@ -5,10 +5,10 @@ import Helmet from 'react-helmet';
 export default function Template({ data }) {
   const blogPosts = data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.templateKey == 'blog-post')
   return(
-    <div className="bg-light-gray pa5-ns bt w-100 pa3" style={{fontFamily: "camingodos-web"}}>
+    <div className="bg-light-gray pa5-ns bt w-100 pa3">
       <Helmet title={`Funky Fresh | Blog`} />
       <section className="pa3 pt4 mw7 center avenir">
-        <h2 className="fw1 ph3 pt4 ph0-l" style={{fontFamily: "camingodos-web"}}>Blog</h2>
+        <h2 className="fw1 ph3 pt4 ph0-l">Blog</h2>
         {blogPosts.map(({node: post}) => {
           return (
             <article key={post.id} className="content pa2 bt bb b--black-10">
@@ -18,7 +18,7 @@ export default function Template({ data }) {
                   <img src="http://mrmrs.github.io/photos/cpu.jpg" className="db" alt="Photo of a dimly lit room with a computer interface terminal."/>
                 </div>
                 <div className="w-100 w-60-ns pl3-ns">
-                <h1 className="f3 fw1 mt0 lh-title" style={{fontFamily: "camingodos-web"}}>{post.frontmatter.title}</h1>
+                <h1 className="f3 fw1 mt0 lh-title">{post.frontmatter.title}</h1>
                 <p className="f6 f5-l lh-copy">{post.excerpt}</p>
                 <p className="f6 lh-copy mv0">{post.frontmatter.date}</p>
                 </div>

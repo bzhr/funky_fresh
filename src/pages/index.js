@@ -5,6 +5,7 @@ import Main from '../components/main-page';
 import PromoVideo from '../components/promo-video';
 import Djs from '../components/djs';
 
+
 export default class IndexPage extends React.Component {
   componentDidMount() {
     if (window.netlifyIdentity) {

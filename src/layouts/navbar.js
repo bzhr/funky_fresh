@@ -7,12 +7,11 @@ import Facebook from 'react-icons/lib/fa/facebook';
 
 export default () => {
   return (
-    // Add "fixed" class to header to fix header on scrolling
-    <header className="z-999 fixed bg-near-black w-100 pa2" style={{fontFamily: "camingodos-web"}}>
+    <header className="z-999 fixed bg-near-black w-100 ph3 pa2">
       <div className="fl h-100 w-50">
         <nav className="dtc v-mid h3 fw6 ttu tracked">
-         <Link className="link dim light-gray dib mr3" to="/" title="Funky Fresh">Funky Fresh</Link>
-         <Link className="link dim light-gray dib mr3" to="/blog" title="Blog">Blog</Link>
+         <Link className="fl w-50 link dim light-gray dib" to="/" title="Funky Fresh">Funky Fresh</Link>
+         <Link className="fl w-50 link dim light-gray dib" to="/blog" title="Blog">Blog</Link>
         </nav>
       </div>
       <div className="fr w-50 h3 dtc v-mid">
