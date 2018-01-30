@@ -7,7 +7,7 @@ import Facebook from 'react-icons/lib/fa/facebook';
 
 export default () => {
   return (
-    <header className="debug z-999 fixed bg-near-black w-100 ph2 ph3-ns">
+    <header className="z-999 fixed bg-near-black w-100 ph2 ph3-ns">
       <div className="fl h-100 w-50">
         <nav className="dtc v-mid h3 fw6 ttu tracked">
          <Link className="fl w-50 link dim light-gray dib" style={{outline: 0}} to="/" title="Funky Fresh">Funky Fresh</Link>
