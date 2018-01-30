@@ -1,12 +1,32 @@
 import React from 'react';
+import Facebook from 'react-icons/lib/fa/facebook';
+import Soundcloud from 'react-icons/lib/fa/soundcloud';
+import Twitter from 'react-icons/lib/fa/twitter';
+import Mail from 'react-icons/lib/md/mail';
+import Youtube from 'react-icons/lib/fa/youtube-play';
 
 export default (data) => {
+  function renderSwitch(param) {
+    switch (param) {
+      case "fb":
+        return Facebook;
+      case "sc":
+        return Soundcloud;
+      case "mail":
+        return Mail;
+      case "tw":
+        return Twitter;
+      case "yt":
+        return Youtube;
+    }
+  }
+  const Component = renderSwitch(data.type)
   return(
-    <a className='h2 w2 link dim gray dib w2 br-100 mr3 pa2 bg-near-white ba b--black-10'
+    <a className='h2-ns w2-ns h1 w1 link dim gray dib br-100 mr3 pa2 bg-near-white ba b--black-10'
        target="_blank" href={data.link}
        title={data.link}
        >
-      <img className="center" src={data.icon}></img>
+      <Component fill="near-black" className="v-mid w1 h1 h2-ns w2-ns dtc center"></Component>
     </a>
   );
 };

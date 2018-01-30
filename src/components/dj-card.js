@@ -3,12 +3,6 @@ import Link from "gatsby-link";
 import Img from "gatsby-image";
 import SocialMediaButton from "./SocialMediaButton";
 
-import fb from "../img/facebook.svg";
-import twitter from "../img/twitter.svg";
-import sc from "../img/soundcloud.svg";
-import youtube from "../img/youtube.svg";
-import mail from "../img/mail.svg";
-
 export default ({ data }) => {
   const title = data.title;
   const fbLink = data.fb;
@@ -33,23 +27,23 @@ export default ({ data }) => {
             {title}
           </Link>
           <div className="pv2">
-            {fbLink ? <SocialMediaButton icon={fb} link={fbLink} /> : null}
+            {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
             {twitterLink ? (
-              <SocialMediaButton icon={twitter} link={twitterLink} />
+              <SocialMediaButton type={"tw"} link={twitterLink} />
             ) : null}
-            {scLink ? <SocialMediaButton icon={sc} link={scLink} /> : null}
+            {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
             {mailLink ? (
-              <SocialMediaButton icon={mail} link={mailLink} />
+              <SocialMediaButton type={"mail"} link={mailLink} />
             ) : null}
-            {ytLink ? <SocialMediaButton icon={youtube} link={ytLink} /> : null}
+            {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
           </div>
         </div>
         <a
           className="w-100 link db bg-animate bg-near-black hover-bg-silver f6 br1"
           href="#"
         >
-          <div className="fl w-100 h-100 dt hover-bg-silver">
-            <p className="dtc v-mid pa2 fw4 f6 h-100 lh-copy tc white">
+          <div className="fl w-100 h2 dt hover-bg-silver">
+            <p className="dtc v-mid pa3 fw4 f6 h-100 lh-copy tc white">
               Download promo pack
             </p>
           </div>
