@@ -4,7 +4,8 @@ import promoSlika from "../img/promo-slika.jpg";
 const videoUrl = require("../img/promo-video.mp4");
 const videoStyle = {
   display: "block",
-  backgroundSize: "100% 100%"
+  backgroundImage: "url(../img/promo-slika.jpg)",
+  backgroundSize: "cover"
 };
 
 export default ({ data }) => {
@@ -13,9 +14,9 @@ export default ({ data }) => {
       className="vh-100 bg-near-black"
     >
       <video
-        poster={promoSlika}
+        // poster={promoSlika}
         style={videoStyle}
-        className="mt0 h-100 w-100 lh-0"
+        className="h-100 w-100 lh-0"
         id="bgvid"
         playsInline
         autoPlay
