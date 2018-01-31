@@ -24,6 +24,7 @@ export default class IndexPage extends React.Component {
     const logoData = this.props.data.file.childImageSharp
     const about = data.filter(post => post.node.frontmatter.templateKey == "about-page")[0].node
     const djs = data.filter(post => post.node.frontmatter.templateKey == "dj-profile")
+    console.log("Data", data)
     return (
       <section className="bg-near-black" >
         <Helmet>
@@ -58,8 +59,8 @@ export const frontPageQuery = graphql`
                 original {
                   src
                 }
-                resolutions(width: 250, height: 300){
-                  src
+                sizes(maxWidth: 500){
+                  ...GatsbyImageSharpSizes
                 }
               }
             }

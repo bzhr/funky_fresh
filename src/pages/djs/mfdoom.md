@@ -6,10 +6,10 @@ fb: https://www.facebook.com/mfdoom/
 twitter: https://twitter.com/mfdoom?lang=en
 soundcloud: https://soundcloud.com/mf-doom
 promoMix: https://soundcloud.com/utcalavera/dj-food-stamp-mf-doom
-img: ./img/mfdoom.jpg
+img: ./img/DJ-Strajk.JPG
 ---
 
-![graphql](/img/mfdoom.jpg)
+![graphql](/img/DJ-Strajk.JPG)
 
 ## Intro
 **Daniel Dumile** (pronounced /ˈduːmɪleɪ/ doo-MIH-lay; born 13 July 1971[1]) is an English hip hop recording artist and record producer. Best known for his "super villain" stage persona and unique lyrics, Dumile has taken on several stage names in his career, most notably MF Doom, stylized as **"MF DOOM"**. He has appeared in several collaborative projects such as Madvillain (with Madlib), Danger Doom (with Danger Mouse), Doomstarks (with Ghostface Killah), JJ Doom (with Jneiro Jarel), and NehruvianDoom (with Bishop Nehru).

@@ -5,11 +5,11 @@ title: Dimitri from Chair
 fb: https://www.facebook.com/DJ-Dimitri-from-Chair-102381499873714//
 soundcloud: https://soundcloud.com/dimitri-from-chair
 promoMix: https://soundcloud.com/dimitri-from-chair/chapo-rouge-live-mixx
-img: ./img/dimitri-from-chair.jpg
+img: ./img/DJ-Chvare.JPG
 
 ---
 
-![graphql](/img/dimitri-from-chair.jpg)
+![graphql](/img/DJ-Chvare.JPG)
 
 Dimitri from Chair(Pikisipi) is one of the Architects and co-founder of the Macedonian Hip Hop working with the two most influential Hip Hop bands in Macedonia(Cista Okolina & SAF)..
 As a premier MC and Lyricist despite his live performances with his bands,he worked as a HipHopPromoter/Reprezent on the electronic media (TV&Radio).

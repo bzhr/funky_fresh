@@ -5,13 +5,13 @@ title: Drazi Drags
 fb: https://www.facebook.com/djdrazidrags/
 twitter: https://twitter.com/drazi_drags
 soundcloud: https://www.mixcloud.com/drazidrags/
-img: ./img/drazidrags.jpg
+img: ./img/DJ-Drazi-Drags.JPG
 youtube: https://www.youtube.com/user/dragandadrags
 mail: dragandadrags [at] hotmail.com
 promoMix: https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/
 ---
 
-![graphql](/img/drazidrags.jpg)
+![graphql](/img/DJ-Drazi-Drags.JPG)
 
 ## Beginnings
 Drazi Drags was born in Skopje, Macedonia in 1988. His DJing career arose at the age of 15, when he started recording rap music with his friends from the neighbourhood, but his attention was caught by turntablism and his focus remained on scratching.

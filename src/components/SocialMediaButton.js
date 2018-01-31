@@ -22,11 +22,13 @@ export default (data) => {
   }
   const Component = renderSwitch(data.type)
   return(
-    <a className='h2-ns w2-ns h2 w2 link dim gray dib br-100 mr3 pa2 bg-near-white ba b--black-10'
-       target="_blank" href={data.link}
-       title={data.link}
-       >
-      <Component fill="near-black" className="v-mid w1 h1 h-100-ns w-100-ns dtc center"></Component>
-    </a>
+    <section className="">
+      <a className='link dim gray dib br-100 pa2 bg-near-white ba'
+         target="_blank" href={data.link}
+         title={data.link}
+         >
+        <Component fill="near-black" className="v-mid dtc"></Component>
+      </a>
+    </section>
   );
 };
