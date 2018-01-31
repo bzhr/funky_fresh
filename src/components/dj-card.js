@@ -25,14 +25,14 @@ export default ({ data }) => {
         </Link>
         <div className="w-100 center bg-white bt b--black-20">
           <Link
-            className="w-100 h-100 black-70 ttu tracked tc db link black hover-black-60 h2"
+            className="w-100 h-100 black-70 ttu tracked tc db link black hover-black-60"
             to={djUrl}
           >
-          <h2 className="fw5 f4-ns f6 pt2 v-mid lh-title"> {title} </h2>
+          <h2 className="fw5 f4-ns f6 pt2 v-mid lh-title" style={{height: "3rem"}}> {title} </h2>
           </Link>
         </div>
 
-        <div className="cf bg-white pa2 ">
+        <div className="v-mid cf bg-white" style={{height: "6rem"}}>
           <div className="fl w-third w-20-ns tc">
             {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
           </div>
