@@ -14,19 +14,19 @@ export default ({ data }) => {
   const mailLink = data.mail;
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
-      <article className="center hide-child relative ba b--silver mw5 db">
+      <article className="center h-100 ph2 hide-child relative ba b--silver mw5 db">
         <Link to={djUrl}>
           {/* <Img resolutions={data.img.childImageSharp.resolutions} className="db" alt="DJ Photo" /> */}
           <img src={img} className="db" alt="DJ Photo" />
         </Link>
-        <div className="bg-white pa2 bt b--black-20">
+        <div className="w-100 bg-white bt b--black-20">
           <Link
-            className="black-70 ttu tracked tc fw5-l f5-l fw5-m f5-m fw7-ns f7-ns db link black hover-black-60 h2"
+            className="w-100 h-100 black-70 ttu tracked tc fw5-l f5-l fw5-m f5-m fw7-ns f7-ns db link black hover-black-60 h2"
             to={djUrl}
           >
-            {title}
+          <h2 className="f2-ns f3 lh-title"> {title} </h2>
           </Link>
-          <div className="pv2">
+          <div className="dtc pa2 mv3">
             {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
             {twitterLink ? (
               <SocialMediaButton type={"tw"} link={twitterLink} />
@@ -42,7 +42,7 @@ export default ({ data }) => {
           className="w-100 link db bg-animate bg-near-black hover-bg-silver f6 br1"
           href="#"
         >
-          <div className="fl w-100 h2 dt hover-bg-silver">
+          <div className="w-100 h2 dt hover-bg-silver">
             <p className="dtc v-mid pa3 fw4 f6 h-100 lh-copy tc white">
               Download promo pack
             </p>
