@@ -15,7 +15,7 @@ export default ({ data }) => {
 
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
-      <article className="center hide-child relative ba b--silver mw5 db">
+      <article className="center hide-child relative ba b--silver mw5 db bg-white">
         <Link to={djUrl}>
           <Img 
             sizes={data.img.childImageSharp.sizes}
