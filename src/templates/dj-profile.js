@@ -29,20 +29,32 @@ export default function Template({ data }) {
     }%2F${mixName}%2F`;
   }
   return (
-    <section className="debug bg-light-gray pa5-ns bt w-100 pa3">
+    <section className="bg-light-gray pa5-ns bt w-100 pa3">
       <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
       <h1 className="ttu tracked f1 fw4 pt4">
         {data.markdownRemark.frontmatter.title}
       </h1>
-      {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
-      {twitterLink ? (
-        <SocialMediaButton type={"tw"} link={twitterLink} />
-      ) : null}
-      {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
-      {mailAddress ? (
-        <SocialMediaButton type={"mail"} link={mailAddress} />
-      ) : null}
-      {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
+      <div className="cf pa2 measure">
+          <div className="fl w-50 w-20-ns tc">
+            {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
+          </div>
+          <div className="fl h-25 w-50 w-20-ns tc">
+            {twitterLink ? (
+              <SocialMediaButton type={"tw"} link={twitterLink} />
+            ) : null}
+          </div>
+          <div className="fl w-50 w-20-ns tc">
+            {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
+          </div>
+          <div className="fl w-50 w-20-ns tc">
+            {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
+          </div>
+          <div className="fl w-50 w-20-ns tc">
+            {mailAddress ? (
+              <SocialMediaButton type={"mail"} link={mailAddress} />
+            ) : null}
+          </div>
+        </div>
 
       <div
         className="measure lh-copy"
