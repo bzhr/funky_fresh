@@ -33,21 +33,21 @@ export default ({ data }) => {
         </div>
 
         <div className="cf bg-white pa2 ">
-          <div className="fl w-50 w-20-ns tc">
+          <div className="fl w-third w-20-ns tc">
             {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
           </div>
-          <div className="fl h-25 w-50 w-20-ns tc">
+          <div className="fl w-third w-20-ns tc">
             {twitterLink ? (
               <SocialMediaButton type={"tw"} link={twitterLink} />
             ) : null}
           </div>
-          <div className="fl w-50 w-20-ns tc">
+          <div className="fl w-third w-20-ns tc">
             {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
           </div>
-          <div className="fl w-50 w-20-ns tc">
+          <div className="fl w-third w-20-ns tc">
             {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
           </div>
-          <div className="fl w-50 w-20-ns tc">
+          <div className="fl w-third w-20-ns tc">
             {mailLink ? (
               <SocialMediaButton type={"mail"} link={mailLink} />
             ) : null}
