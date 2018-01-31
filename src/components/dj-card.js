@@ -15,21 +15,20 @@ export default ({ data }) => {
 
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
-      <article className="center ph2 hide-child relative ba b--silver mw5 db">
+      <article className="center hide-child relative ba b--silver mw5 db">
         <Link to={djUrl}>
           <Img 
             sizes={data.img.childImageSharp.sizes}
             className="db" alt="DJ Photo"
             alt={'DJ image'}
           />
-          {/*<img src={img} className="db" alt="DJ Photo" />*/}
         </Link>
         <div className="w-100 center bg-white bt b--black-20">
           <Link
-            className="w-100 h-100 black-70 ttu tracked tc fw5-l f5-l fw5-m f5-m fw7-ns f7-ns db link black hover-black-60 h2"
+            className="w-100 h-100 black-70 ttu tracked tc db link black hover-black-60 h2"
             to={djUrl}
           >
-          <h2 className="fw5 f2-ns ph1 v-mid lh-title"> {title} </h2>
+          <h2 className="fw5 f4-ns f6 pt2 v-mid lh-title"> {title} </h2>
           </Link>
         </div>
 

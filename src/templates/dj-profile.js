@@ -35,21 +35,21 @@ export default function Template({ data }) {
         {data.markdownRemark.frontmatter.title}
       </h1>
       <div className="cf pa2 measure">
-          <div className="fl w-50 w-20-ns tc">
+          <div className="fl w-20 tc">
             {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
           </div>
-          <div className="fl h-25 w-50 w-20-ns tc">
+          <div className="fl h-25 w-20 tc">
             {twitterLink ? (
               <SocialMediaButton type={"tw"} link={twitterLink} />
             ) : null}
           </div>
-          <div className="fl w-50 w-20-ns tc">
+          <div className="fl w-20 tc">
             {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
           </div>
-          <div className="fl w-50 w-20-ns tc">
+          <div className="fl w-20 tc">
             {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
           </div>
-          <div className="fl w-50 w-20-ns tc">
+          <div className="fl w-20 tc">
             {mailAddress ? (
               <SocialMediaButton type={"mail"} link={mailAddress} />
             ) : null}
