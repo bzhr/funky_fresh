@@ -13,7 +13,7 @@ export default ({ data }) => {
   const ytLink = data.youtube;
   const mailLink = data.mail;
   return (
-    <section className="debug fl tc w-50 w-third-m w-25-l pa2" key={title}>
+    <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
       <article className="center ph2 hide-child relative ba b--silver mw5 db">
         <Link to={djUrl}>
           {/* <Img resolutions={data.img.childImageSharp.resolutions} className="db" alt="DJ Photo" /> */}
