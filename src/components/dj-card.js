@@ -15,7 +15,7 @@ export default ({ data }) => {
 
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
-      <article className="center hide-child relative ba b--silver mw5 db bg-white">
+      <article className="center hide-child relative ba b--silver mw5 db bg-silver">
         <Link to={djUrl}>
           <Img 
             sizes={data.img.childImageSharp.sizes}
@@ -23,16 +23,16 @@ export default ({ data }) => {
             alt={'DJ image'}
           />
         </Link>
-        <div className="w-100 center bg-white bt b--black-20">
+        <div className="w-100 center bt b--black-20">
           <Link
-            className="w-100 h-100 black-70 ttu tracked tc db link black hover-black-60"
+            className="w-100 h-100 ttu tracked tc db link black hover-black-60"
             to={djUrl}
           >
           <h2 className="fw5 f4-ns f6 pt2 v-mid lh-title" style={{height: "3rem"}}> {title} </h2>
           </Link>
         </div>
 
-        <div className="v-mid cf bg-white" style={{height: "6rem"}}>
+        <div className="v-mid cf" style={{height: "6rem"}}>
           <div className="fl w-third w-20-ns tc">
             {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
           </div>
