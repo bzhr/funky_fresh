@@ -27,7 +27,7 @@ export default ({ about, logoData }) => {
               dtc v-mid tc white">
               <div
                 className="w-100 center lh-copy pa3 tc measure white f3"
-                dangerouslySetInnerHTML={{ __html: about.excerpt }}
+                dangerouslySetInnerHTML={{ __html: about.html }}
               />
             </div>
           </div>
