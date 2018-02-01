@@ -23,7 +23,7 @@ export default (data) => {
   const Component = renderSwitch(data.type)
   return(
     <section className="">
-      <a className='link dim gray dib br-100 pa2 ma1 bg-near-white ba'
+      <a className='link dim gray dib br-100 pa1 pa2-ns ma1 bg-near-white ba'
          target="_blank" href={data.link}
          title={data.link}
          >

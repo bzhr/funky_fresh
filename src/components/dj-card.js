@@ -32,7 +32,7 @@ export default ({ data }) => {
           </Link>
         </div>
 
-        <div className="v-mid cf" style={{height: "6rem"}}>
+        <div className="" style={{height: "6rem"}}>
           <div className="fl w-third w-20-ns tc">
             {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
           </div>
