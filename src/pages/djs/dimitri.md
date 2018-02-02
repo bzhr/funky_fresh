@@ -5,6 +5,7 @@ title: Dimitri from Chair
 fb: https://www.facebook.com/DJ-Dimitri-from-Chair-102381499873714//
 soundcloud: https://soundcloud.com/dimitri-from-chair
 promoMix: https://soundcloud.com/dimitri-from-chair/chapo-rouge-live-mixx
+mail: pikisipi33@gmail.com
 img: ./img/DJ-Dimitri-from-Chair.jpg
 
 ---

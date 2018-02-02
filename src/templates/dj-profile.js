@@ -20,14 +20,28 @@ export default function Template({ data }) {
   const ytLink = data.markdownRemark.frontmatter.youtube;
 
   let url = "";
-  if (promoMixLink.includes("mixcloud")) {
-    url = URL(promoMixLink);
-    const user = url.pathname.split("/")[1];
-    const mixName = url.pathname.split("/")[2];
-    url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&autoplay=0&feed=%2F${
-      user
-    }%2F${mixName}%2F`;
+  function createPromoMix() {
+    if (promoMixLink) {
+      if (promoMixLink.includes("mixcloud")) {
+        url = URL(promoMixLink);
+        const user = url.pathname.split("/")[1];
+        const mixName = url.pathname.split("/")[2];
+        url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&autoplay=0&feed=%2F${
+          user
+        }%2F${mixName}%2F`;
+        const PromoMix = MixcloudEmbed
+        return PromoMix
+      } else {
+        const PromoMix = Soundcloud
+        return PromoMix
+      }
+    }
   }
+  const PromoMix = createPromoMix()
+  if (url == "") {
+    url = promoMixLink
+  }
+
   return (
     <section className="bg-light-gray pa5-ns bt w-100 pa3">
       <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
@@ -60,7 +74,7 @@ export default function Template({ data }) {
         className="measure lh-copy"
         dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
       />
-      {url ? <MixcloudEmbed src={url} /> : <Soundcloud url={promoMixLink} />}
+      {promoMixLink ? <PromoMix url={url} /> : null}
     </section>
   );
 }
