@@ -4,10 +4,11 @@ path: /drazidrags
 title: Drazi Drags
 fb: https://www.facebook.com/djdrazidrags/
 twitter: https://twitter.com/drazi_drags
-soundcloud: https://www.mixcloud.com/drazidrags/
+mixcloud: https://www.mixcloud.com/drazidrags/
 img: ./img/DJ-Drazi-Drags.JPG
 youtube: https://www.youtube.com/user/dragandadrags
 mail: dragandadrags [at] hotmail.com
+instagram: https://www.instagram.com/stories/drazidrags/
 promoMix: https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/
 ---
 

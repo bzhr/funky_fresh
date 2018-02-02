@@ -24,7 +24,8 @@ export default class IndexPage extends React.Component {
     const logoData = this.props.data.file.childImageSharp
     const about = data.filter(post => post.node.frontmatter.templateKey == "about-page")[0].node
     const djs = data.filter(post => post.node.frontmatter.templateKey == "dj-profile")
-    console.log("Data", data)
+    console.log(data)
+    
     return (
       <section className="bg-near-black" >
         <Helmet>
@@ -54,6 +55,8 @@ export const frontPageQuery = graphql`
             soundcloud
             youtube
             mail
+            instagram
+            mixcloud
             img {
               childImageSharp {
                 original {

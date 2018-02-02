@@ -12,6 +12,9 @@ export default ({ data }) => {
   const img = data.img.childImageSharp.original.src;
   const ytLink = data.youtube;
   const mailLink = data.mail;
+  const instaLink = data.instagram;
+  const mixcloudLink = data.mixcloud;
+  console.log(data)
 
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
@@ -50,6 +53,16 @@ export default ({ data }) => {
           <div className="fl w-third w-20-ns tc">
             {mailLink ? (
               <SocialMediaButton type={"mail"} link={mailLink} />
+            ) : null}
+          </div>
+          <div className="fl w-third w-20-ns tc">
+            {instaLink ? (
+              <SocialMediaButton type={"insta"} link={instaLink} />
+            ) : null}
+          </div>
+          <div className="fl w-third w-20-ns tc">
+            {instaLink ? (
+              <SocialMediaButton type={"mixcl"} link={mixcloudLink} />
             ) : null}
           </div>
         </div>

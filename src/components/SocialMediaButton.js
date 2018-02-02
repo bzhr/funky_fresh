@@ -4,6 +4,8 @@ import Soundcloud from 'react-icons/lib/fa/soundcloud';
 import Twitter from 'react-icons/lib/fa/twitter';
 import Mail from 'react-icons/lib/md/mail';
 import Youtube from 'react-icons/lib/fa/youtube-play';
+import Instagram from 'react-icons/lib/fa/instagram';
+import Mixcloud from 'react-icons/lib/fa/mixcloud';
 
 export default (data) => {
   function renderSwitch(param) {
@@ -18,13 +20,24 @@ export default (data) => {
         return Twitter;
       case "yt":
         return Youtube;
+      case "insta":
+        return Instagram;
+      case "mixcl":
+        return Mixcloud;
     }
   }
   const Component = renderSwitch(data.type)
+
+  let href = ""
+  if (data.type == "mail") {
+    href = "mailto:" + data.link
+  } else {
+    href = data.link
+  }
   return(
     <section className="">
       <a className='link dim gray dib br-100 pa1 pa2-ns ma1 bg-near-white ba'
-         target="_blank" href={data.link}
+         target="_blank" href={href}
          title={data.link}
          >
         <Component fill="near-black" className="v-mid dtc"></Component>

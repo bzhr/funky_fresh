@@ -44,3 +44,5 @@ collections:
       - {label: "Soundcloud", name: "soundcloud", widget: "string"}
       - {label: "Promo Mix", name: "promoMix", widget: "string"}
       - {label: "Image", name: "img", widget: "string"}
+      - {label: "Instagram", name: "instagram", widget: "string"}
+      - {label: "Mixcloud", name: "mixcloud", widget: "string"}
