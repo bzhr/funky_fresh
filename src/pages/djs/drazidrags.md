@@ -8,7 +8,7 @@ mixcloud: https://www.mixcloud.com/drazidrags/
 img: ./img/DJ-Drazi-Drags.JPG
 youtube: https://www.youtube.com/user/dragandadrags
 mail: dragandadrags [at] hotmail.com
-instagram: https://www.instagram.com/stories/drazidrags/
+instagram: https://www.instagram.com/drazidrags/
 promoMix: https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/
 ---
 
