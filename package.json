@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Bozhidar Hristov",
   "dependencies": {
-    "gatsby": "1.9.126",
+    "gatsby": "1.9.175",
     "gatsby-image": "^1.0.27",
     "gatsby-link": "^1.6.30",
     "gatsby-plugin-react-helmet": "^1.0.8",
