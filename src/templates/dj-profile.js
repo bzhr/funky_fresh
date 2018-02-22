@@ -90,7 +90,6 @@ export const DjProfileQuery = graphql`
         fb
         twitter
         soundcloud
-        youtube
         mail
         promoMix
       }

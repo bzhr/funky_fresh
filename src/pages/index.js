@@ -53,7 +53,6 @@ export const frontPageQuery = graphql`
             fb
             twitter
             soundcloud
-            youtube
             mail
             instagram
             mixcloud
