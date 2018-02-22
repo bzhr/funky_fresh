@@ -10,11 +10,9 @@ export default ({ data }) => {
   const twitterLink = data.twitter;
   const djUrl = data.path;
   const img = data.img.childImageSharp.original.src;
-  const ytLink = data.youtube;
   const mailLink = data.mail;
   const instaLink = data.instagram;
   const mixcloudLink = data.mixcloud;
-  console.log(data)
 
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>

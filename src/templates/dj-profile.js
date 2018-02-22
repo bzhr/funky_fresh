@@ -17,7 +17,6 @@ export default function Template({ data }) {
   const scLink = data.markdownRemark.frontmatter.soundcloud;
   const promoMixLink = data.markdownRemark.frontmatter.promoMix;
   const mailAddress = data.markdownRemark.frontmatter.mail;
-  const ytLink = data.markdownRemark.frontmatter.youtube;
 
   let url = "";
   function createPromoMix() {
