@@ -6,7 +6,6 @@ fb: https://www.facebook.com/djdrazidrags/
 twitter: https://twitter.com/drazi_drags
 mixcloud: https://www.mixcloud.com/drazidrags/
 img: ./img/DJ-Drazi-Drags.JPG
-youtube: https://www.youtube.com/user/dragandadrags
 mail: dragandadrags [at] hotmail.com
 instagram: https://www.instagram.com/drazidrags/
 promoMix: https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/
