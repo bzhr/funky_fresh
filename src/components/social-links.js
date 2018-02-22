@@ -35,7 +35,7 @@ class SocialLinks extends Component {
           url={url}
           title={post.title}
           picture={post.cover}
-          description={postNode.excerpt}
+          quote={postNode.excerpt}
         >
           <FacebookIcon className="" round size={iconSize} />
           <FacebookShareCount url={url}>
