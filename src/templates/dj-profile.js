@@ -60,9 +60,9 @@ export default function Template({ data }) {
           <div className="fl w-20 tc">
             {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
           </div>
-          <div className="fl w-20 tc">
+          {/*<div className="fl w-20 tc">
             {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
-          </div>
+          </div>*/}
           <div className="fl w-20 tc">
             {mailAddress ? (
               <SocialMediaButton type={"mail"} link={mailAddress} />

@@ -47,9 +47,9 @@ export default ({ data }) => {
           <div className="fl w-third w-20-ns tc">
             {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
           </div>
-          <div className="fl w-third w-20-ns tc">
+          {/*<div className="fl w-third w-20-ns tc">
             {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
-          </div>
+          </div>*/}
           <div className="fl w-third w-20-ns tc">
             {mailLink ? (
               <SocialMediaButton type={"mail"} link={mailLink} />

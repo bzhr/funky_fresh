@@ -7,18 +7,6 @@ import Djs from '../components/djs';
 
 
 export default class IndexPage extends React.Component {
-  componentDidMount() {
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('init', user => {
-        if (!user) {
-          window.netlifyIdentity.on('login', () => {
-            document.location.href = '/admin/';
-          });
-        }
-      });
-    }
-  }
-
   render() {
     const data = this.props.data.allMarkdownRemark.edges
     const logoData = this.props.data.file.childImageSharp
@@ -28,9 +16,9 @@ export default class IndexPage extends React.Component {
     
     return (
       <section className="bg-near-black" >
-        <Helmet>
+        {/*<Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
-        </Helmet>
+        </Helmet>*/}
         <Main about={about} logoData={logoData}/>
         <Djs data={djs}/>
       </section>
