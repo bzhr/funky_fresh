@@ -4,7 +4,7 @@ import Typography from 'typography';
 
 const typography = new Typography({
   title: 'Funky Fresh',
-  baseFontSize: 18,
+  baseFontSize: "18px",
   baseLineHeight: 1.5,
   headerFontFamily: ['Didact Gothic', 'sans-serif'],
   bodyFontFamily: ['Didact Gothic', 'sans-serif'],
