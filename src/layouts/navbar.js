@@ -29,10 +29,10 @@ export default () => {
             <div className="fl h-100 dt pa3-ns ph1">
             <div className="dtc v-mid">
               <Link
-                className="link dim light-gray dib f3-ns f6"
+                className="link w-100 dim light-gray dib f3-ns f6"
                 to="/"
               >
-                <p className="dib h2 dtc v-mid">Funky Fresh</p>
+                <p style={{whiteSpace: "nowrap"}} className="dib h2 dtc v-mid">Funky Fresh</p>
               </Link>
             </div>
           </div>
