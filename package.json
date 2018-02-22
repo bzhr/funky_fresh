@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Bozhidar Hristov",
   "dependencies": {
-    "gatsby": "1.9.175",
+    "gatsby": "^1.9.206",
     "gatsby-image": "^1.0.27",
     "gatsby-link": "^1.6.30",
     "gatsby-plugin-react-helmet": "^1.0.8",
@@ -19,6 +19,7 @@
     "react-icons": "^2.2.7",
     "react-share": "^1.17.0",
     "react-soundcloud-widget": "^2.0.4",
+    "react-truncate": "^2.3.0",
     "tachyons": "^4.9.0",
     "tachyons-cli": "^1.2.0",
     "url-parse": "^1.2.0"

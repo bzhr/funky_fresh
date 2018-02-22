@@ -8,6 +8,7 @@ export default ({ url }) => {
         height="120"
         src={url}
         frameBorder="0"
+        className="mb0"
       />
     </div>
   )

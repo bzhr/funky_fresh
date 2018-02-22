@@ -42,39 +42,43 @@ export default function Template({ data }) {
   }
 
   return (
-    <section className="bg-light-gray pa5-ns bt w-100 pa3">
-      <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
-      <h1 className="ttu tracked f1 fw4 pt4">
-        {data.markdownRemark.frontmatter.title}
-      </h1>
-      <div className="cf pa2 measure">
-          <div className="fl w-20 tc">
-            {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
+    <div className="bg-light-gray">
+      <section className="mb5 pa5-ns bt w-100">
+        <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
+        <h1 className="ttu tracked f1 fw4 pt4">
+          {data.markdownRemark.frontmatter.title}
+        </h1>
+        <div className="cf pa2 measure">
+            <div className="fl w-20 tc">
+              {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
+            </div>
+            <div className="fl h-25 w-20 tc">
+              {twitterLink ? (
+                <SocialMediaButton type={"tw"} link={twitterLink} />
+              ) : null}
+            </div>
+            <div className="fl w-20 tc">
+              {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
+            </div>
+            {/*<div className="fl w-20 tc">
+              {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
+            </div>*/}
+            <div className="fl w-20 tc">
+              {mailAddress ? (
+                <SocialMediaButton type={"mail"} link={mailAddress} />
+              ) : null}
+            </div>
           </div>
-          <div className="fl h-25 w-20 tc">
-            {twitterLink ? (
-              <SocialMediaButton type={"tw"} link={twitterLink} />
-            ) : null}
-          </div>
-          <div className="fl w-20 tc">
-            {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
-          </div>
-          {/*<div className="fl w-20 tc">
-            {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
-          </div>*/}
-          <div className="fl w-20 tc">
-            {mailAddress ? (
-              <SocialMediaButton type={"mail"} link={mailAddress} />
-            ) : null}
-          </div>
-        </div>
 
-      <div
-        className="measure lh-copy"
-        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-      />
-      {promoMixLink ? <PromoMix url={url} /> : null}
-    </section>
+        <div
+          className="measure lh-copy pv5 pv2-ns"
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
+      </section>
+      <footer className="bottom-0 bg-near-black w-100 tc-l z-998 fixed">
+        {promoMixLink ? <PromoMix url={url} /> : null}
+      </footer>
+    </div>
   );
 }
 
