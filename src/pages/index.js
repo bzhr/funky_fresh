@@ -1,25 +1,32 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
-import Main from '../components/main-page';
-import PromoVideo from '../components/promo-video';
-import Djs from '../components/djs';
-
+import React from "react";
+import Link from "gatsby-link";
+import Helmet from "react-helmet";
+import Main from "../components/main-page";
+import PromoVideo from "../components/promo-video";
+import Djs from "../components/djs";
 
 export default class IndexPage extends React.Component {
   render() {
-    const data = this.props.data.allMarkdownRemark.edges
-    const logoData = this.props.data.file.childImageSharp
-    const about = data.filter(post => post.node.frontmatter.templateKey == "about-page")[0].node
-    const djs = data.filter(post => post.node.frontmatter.templateKey == "dj-profile")
-    
+    const data = this.props.data.allMarkdownRemark.edges;
+    const logoData = this.props.data.file.childImageSharp;
+    const about = data.filter(
+      post => post.node.frontmatter.templateKey == "about-page"
+    )[0].node;
+    const djs = data.filter(
+      post => post.node.frontmatter.templateKey == "dj-profile"
+    );
+    const orderedDjs = djs.sort(function(a, b) {
+      return a.node.frontmatter.title
+        .toLowerCase()
+        .localeCompare(b.node.frontmatter.title.toLowerCase());
+    });
     return (
-      <section className="bg-near-black" >
+      <section className="bg-near-black">
         {/*<Helmet>
           <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
         </Helmet>*/}
-        <Main about={about} logoData={logoData}/>
-        <Djs data={djs}/>
+        <Main about={about} logoData={logoData} />
+        <Djs data={orderedDjs} />
       </section>
     );
   }
@@ -48,7 +55,7 @@ export const frontPageQuery = graphql`
                 original {
                   src
                 }
-                sizes(maxWidth: 500){
+                sizes(maxWidth: 500) {
                   ...GatsbyImageSharpSizes
                 }
               }
@@ -57,11 +64,11 @@ export const frontPageQuery = graphql`
         }
       }
     }
-    file(relativePath: {eq: "funkyfreshdj_white.png"}) {
+    file(relativePath: { eq: "funkyfreshdj_white.png" }) {
       childImageSharp {
         sizes(maxWidth: 200) {
           ...GatsbyImageSharpSizes
-        } 
+        }
       }
     }
   }
