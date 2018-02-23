@@ -29,8 +29,9 @@ export default () => {
             <div className="fl h-100 dt pa3-ns ph1">
             <div className="dtc v-mid">
               <Link
-                className="link w-100 dim light-gray dib f3-ns f6"
+                className="dim light-gray link dib f3-ns f6 fw8 pa1"
                 to="/"
+                style={{outline: "none"}}
               >
                 <p style={{whiteSpace: "nowrap"}} className="dib h2 dtc v-mid">Funky Fresh</p>
               </Link>
@@ -40,8 +41,9 @@ export default () => {
           <div className="fl h-100 dt pa3-ns ph1">
           <div className="dtc v-mid">
             <Link
-              className="link dim light-gray dib f3-ns f6"
+              className="link dim light-gray dib f3-ns f6 fw8 pa1"
               to="/blog"
+              style={{outline: "none"}}
             >
               <p className="dib h2 dtc v-mid">Blog</p>
             </Link>
