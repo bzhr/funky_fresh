@@ -1,7 +1,7 @@
 ---
 templateKey: 'dj-profile'
 path: /dimitri-from-chair
-title: Dimitri from Chair
+title: DJ Dimitri from Chair
 fb: https://www.facebook.com/DJ-Dimitri-from-Chair-102381499873714//
 soundcloud: https://soundcloud.com/dimitri-from-chair
 mixcloud: https://www.mixcloud.com/mitko-pikisipi-gahstarovski/

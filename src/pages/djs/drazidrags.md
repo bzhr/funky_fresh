@@ -1,7 +1,7 @@
 ---
 templateKey: 'dj-profile'
 path: /drazidrags
-title: Drazi Drags
+title: DJ Drazi Drags
 fb: https://www.facebook.com/djdrazidrags/
 twitter: https://twitter.com/drazi_drags
 mixcloud: https://www.mixcloud.com/drazidrags/
