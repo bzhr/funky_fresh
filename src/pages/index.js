@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
+import Script from "react-load-script";
 import Main from "../components/main-page";
 import PromoVideo from "../components/promo-video";
 import Djs from "../components/djs";
@@ -34,9 +35,10 @@ export default class IndexPage extends React.Component {
     });
     return (
       <section className="bg-near-black">
-        {/*<Helmet>
-          <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
-        </Helmet>*/}
+        <Script
+          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          onLoad={() => this.handleScriptLoad()}
+        />
         <Main about={about} logoData={logoData} />
         <Djs data={orderedDjs} />
       </section>

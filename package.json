@@ -18,6 +18,7 @@
     "npm": "^5.6.0",
     "react": "^15.6.2",
     "react-icons": "^2.2.7",
+    "react-load-script": "0.0.6",
     "react-share": "^1.17.0",
     "react-soundcloud-widget": "^2.0.4",
     "tachyons": "^4.9.0",
