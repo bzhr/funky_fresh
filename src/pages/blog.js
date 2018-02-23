@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 
 export default function Template({ data }) {
   const blogPosts = data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.templateKey == 'blog-post')
-  console.log(blogPosts)
   return(
     <div className="bg-light-gray pa5-ns bt w-100 pa3">
       <Helmet title={`Funky Fresh | Blog`} />

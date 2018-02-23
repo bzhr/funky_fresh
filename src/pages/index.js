@@ -27,7 +27,7 @@ export default class IndexPage extends React.Component {
 
 export const frontPageQuery = graphql`
   query frontPage {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
       edges {
         node {
           excerpt(pruneLength: 400)
