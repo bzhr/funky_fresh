@@ -6,6 +6,18 @@ import PromoVideo from "../components/promo-video";
 import Djs from "../components/djs";
 
 export default class IndexPage extends React.Component {
+  componentDidMount() {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) {
+          window.netlifyIdentity.on('login', () => {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
+  }
+
   render() {
     const data = this.props.data.allMarkdownRemark.edges;
     const logoData = this.props.data.file.childImageSharp;
