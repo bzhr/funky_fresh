@@ -24,6 +24,13 @@ module.exports = {
       }
     },
     {
+    resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `imgLib`,
+        path: `${__dirname}/static/media/`
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
