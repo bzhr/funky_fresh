@@ -44,28 +44,6 @@ export const singleBlogQuery = graphql`
         title
         image
       }
-      fields {
-        imagePath {
-          childImageSharp {
-            original {
-              src
-            }
-            sizes(maxWidth: 500) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
-        imagePath2 {
-          childImageSharp {
-            original {
-              src
-            }
-            sizes(maxWidth: 500) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
-      }
     }
   }
 `;
