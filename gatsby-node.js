@@ -21,7 +21,9 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               image
               image2
-              img
+              img {
+                id
+              }
             }
           }
         }
@@ -31,7 +33,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
-    console.log("RESULT", result)
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       let tKey = node.frontmatter.templateKey;
       if (tKey == "dj-profile" || tKey == "blog-post") {
@@ -47,15 +48,22 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   });
 };
 
-// exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-//   const { createNodeField } = boundActionCreators
-//   if (node.internal.type === 'MarkdownRemark') {
-//     if (node.frontmatter.templateKey === 'blog-post') {
-//       createNodeField({
-//         node,
-//         name: `happiness`,
-//         value: `is sweet graphql queries`
-//       });
-//     }
-//   }
-// }
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+  const { createNodeField } = boundActionCreators
+  if (node.internal.type === 'MarkdownRemark') {
+    if (node.frontmatter.templateKey === 'blog-post') {
+      const path = node.frontmatter.image.slice(1, )
+      const path2 = node.frontmatter.image2.slice(1, )
+      createNodeField({
+        node,
+        name: `imagePath`,
+        value: path
+      });
+      createNodeField({
+        node,
+        name: `imagePath2`,
+        value: path2
+      });
+    }
+  }
+}
