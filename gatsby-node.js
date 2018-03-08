@@ -20,7 +20,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               date
               title
               image
-              image2
               img {
                 id
               }
@@ -49,11 +48,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 };
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators
-  if (node.internal.type === 'MarkdownRemark') {
-    if (node.frontmatter.templateKey === 'blog-post') {
-      const path = node.frontmatter.image.slice(1, )
-      const path2 = node.frontmatter.image2.slice(1, )
+  const { createNodeField } = boundActionCreators;
+  if (node.internal.type === "MarkdownRemark") {
+    if (node.frontmatter.templateKey === "blog-post") {
+      const prefix = "../../../static/media";
+      const path = prefix + node.frontmatter.image;
+      const path2 = prefix + node.frontmatter.image2;
       createNodeField({
         node,
         name: `imagePath`,
@@ -66,4 +66,4 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       });
     }
   }
-}
+};

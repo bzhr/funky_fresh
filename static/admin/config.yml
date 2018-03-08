@@ -3,7 +3,6 @@ backend:
   branch: master
 
 media_folder: static/media/
-public_folder: img
 
 collections:
   - name: "blog"
@@ -27,7 +26,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "за нас"}
-      - {label: "Path", name: "path", widget: "hidden", default: "/za_nas"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
