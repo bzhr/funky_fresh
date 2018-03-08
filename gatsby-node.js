@@ -51,7 +51,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
   if (node.internal.type === "MarkdownRemark") {
     if (node.frontmatter.templateKey === "blog-post") {
-      const prefix = "../../../static/media";
+      const prefix = "../../..";
       const path = prefix + node.frontmatter.image;
       const path2 = prefix + node.frontmatter.image2;
       createNodeField({
