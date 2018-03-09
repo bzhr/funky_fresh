@@ -46,4 +46,4 @@ collections:
       - {label: "Image", name: "img", widget: "image"}
       - {label: "Instagram", name: "instagram", widget: "string"}
       - {label: "Mixcloud", name: "mixcloud", widget: "string"}
-      - {label: "Promo pack", name: "promoPack", widget: "file"}
+      - {label: "Promo pack", name: "promoPack", widget: "file", default: "/static/media/PromoPack.zip"}
