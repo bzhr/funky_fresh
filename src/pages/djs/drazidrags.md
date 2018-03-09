@@ -9,6 +9,7 @@ img: /static/media/DJ-Drazi-Drags.JPG
 mail: dragandadrags [at] hotmail.com
 instagram: https://www.instagram.com/drazidrags/
 promoMix: https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/
+promoPack: /static/media/dragsPromoPack.zip
 ---
 
 ![graphql](/img/DJ-Drazi-Drags.JPG)
