@@ -3,13 +3,15 @@ import Link from "gatsby-link";
 import Img from "gatsby-image";
 import SocialMediaButton from "./SocialMediaButton";
 
-export default ({ data }) => {
+export default ({ node }) => {
+  const data = node.frontmatter
+
+  const img = node.fields.image.childImageSharp;
   const title = data.title;
   const fbLink = data.fb;
   const scLink = data.soundcloud;
   const twitterLink = data.twitter;
   const djUrl = data.path;
-  const img = data.img.childImageSharp.original.src;
   const mailLink = data.mail;
   const instaLink = data.instagram;
   const mixcloudLink = data.mixcloud;
@@ -19,7 +21,7 @@ export default ({ data }) => {
       <article className="center hide-child relative ba b--silver mw5 db bg-silver">
         <Link to={djUrl}>
           <Img 
-            sizes={data.img.childImageSharp.sizes}
+            sizes={img.sizes}
             className="db" alt="DJ Photo"
             alt={'DJ image'}
           />

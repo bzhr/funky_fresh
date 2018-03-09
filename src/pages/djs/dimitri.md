@@ -6,7 +6,7 @@ fb: https://www.facebook.com/DJ-Dimitri-from-Chair-102381499873714//
 soundcloud: https://soundcloud.com/dimitri-from-chair
 mixcloud: https://www.mixcloud.com/mitko-pikisipi-gahstarovski/
 mail: pikisipi33 [at] gmail.com
-img: ./img/DJ-Dimitri-from-Chair.jpg
+img: /static/media/DJ-Dimitri-from-Chair.jpg
 
 ---
 

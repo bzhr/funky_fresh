@@ -17,7 +17,7 @@ export default function Template({ data }) {
         {img1 ? (
           <Img
             sizes={img1.childImageSharp.sizes}
-            className="ma3-ns ma2"
+            className="ma3-ns ma2 db measure"
             alt="Photo"
           />
         ) : null}
@@ -28,7 +28,7 @@ export default function Template({ data }) {
         {img2 ? (
           <Img
             sizes={img2.childImageSharp.sizes}
-            className="ma3-ns ma2"
+            className="ma3-ns ma2 db measure"
             alt="Photo"
           />
         ) : null}

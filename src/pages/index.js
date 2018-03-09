@@ -62,7 +62,9 @@ export const frontPageQuery = graphql`
             mail
             instagram
             mixcloud
-            img {
+          }
+          fields {
+            image {
               childImageSharp {
                 original {
                   src

@@ -8,7 +8,7 @@ export default ({ data }) => {
       <div className="cf pa2 w-75-l center" >
         {data.map(djInfo => {
           return(
-            <DjCard data={djInfo.node.frontmatter}  key={djInfo.node.frontmatter.title}/>
+            <DjCard node={djInfo.node}  key={djInfo.node.frontmatter.title}/>
           )
         })}
       </div>
