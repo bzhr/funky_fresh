@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Funky Fresh Website`,
-    siteUrl: 'https://funky-fresh.netlify.com'
+    siteUrl: "https://funky-fresh.netlify.com"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,18 +13,18 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages'
+        name: "pages"
       }
     },
     {
-    resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
         path: `${__dirname}/src/img/`
       }
     },
     {
-    resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: `imgLib`,
         path: `${__dirname}/static/media/`
@@ -39,7 +39,7 @@ module.exports = {
             options: {
               maxWidth: 800,
               linkImagesToOriginal: false,
-              sizeByPixelDensity: true,
+              sizeByPixelDensity: true
             }
           }
         ]
@@ -48,8 +48,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
+        pathToConfigModule: `src/utils/typography.js`
+      }
     },
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
+    }
   ]
 };
