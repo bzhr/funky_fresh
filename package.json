@@ -47,6 +47,10 @@
   "peerDependencies": {
     "webpack": "^4.0.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "prop-types": "^15.5.9",
+    "caniuse-db": "^1.0.30000652",
+    "slate": "^0.27.2",
+    "graphql": "^0.4.0"
   }
 }
