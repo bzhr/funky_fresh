@@ -23,6 +23,7 @@
     "react-load-script": "0.0.6",
     "react-share": "^1.17.0",
     "react-soundcloud-widget": "^2.0.4",
+    "sharp": "^0.20.2",
     "tachyons": "^4.9.0",
     "tachyons-cli": "^1.2.0",
     "url-parse": "^1.2.0"
