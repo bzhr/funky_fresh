@@ -18,7 +18,7 @@
     "gatsby-transformer-sharp": "^1.6.15",
     "netlify-cms": "^1.7.0",
     "npm": "^5.6.0",
-    "react": "^15.6.2",
+    "react": "^16.0.0",
     "react-icons": "^2.2.7",
     "react-load-script": "0.0.6",
     "react-share": "^1.17.0",
@@ -43,14 +43,5 @@
   },
   "devDependencies": {
     "prettier": "^1.8.2"
-  },
-  "peerDependencies": {
-    "webpack": "^4.0.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "prop-types": "^15.5.9",
-    "caniuse-db": "^1.0.30000652",
-    "slate": "^0.27.2",
-    "graphql": "^0.4.0"
   }
 }
