@@ -36,14 +36,14 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "DJ"}
-      - {label: "Path", name: "path", widget: "hidden", default: "/djs"}
+      - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Bio", name: "Bio", widget: "markdown", required: "false"}
-      - {label: "Facebook", name: "fb", widget: "string", required: "false"}
-      - {label: "Twitter", name: "twitter", widget: "string", required: "false"}
-      - {label: "Soundcloud", name: "soundcloud", widget: "string", required: "false"}
-      - {label: "Promo Mix", name: "promoMix", widget: "string", required: "false"}
+      - {label: "Bio", name: "Bio", widget: "markdown", required: false}
+      - {label: "Facebook", name: "fb", widget: "string", required: false}
+      - {label: "Twitter", name: "twitter", widget: "string", required: false}
+      - {label: "Soundcloud", name: "soundcloud", widget: "string", required: false}
+      - {label: "Promo Mix", name: "promoMix", widget: "string", required: false}
       - {label: "Image", name: "img", widget: "image"}
-      - {label: "Instagram", name: "instagram", widget: "string", required: "false"}
-      - {label: "Mixcloud", name: "mixcloud", widget: "string", required: "false"}
-      - {label: "Promo pack", name: "promoPack", widget: "file", default: "/static/media/PromoPack.zip", required: "false"}
+      - {label: "Instagram", name: "instagram", widget: "string", required: false}
+      - {label: "Mixcloud", name: "mixcloud", widget: "string", required: false}
+      - {label: "Promo pack", name: "promoPack", widget: "file", default: "/static/media/PromoPack.zip", required: false}
