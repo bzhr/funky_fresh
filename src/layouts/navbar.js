@@ -8,7 +8,7 @@ import Facebook from "react-icons/lib/fa/facebook";
 export default () => {
   return (
     <header className="z-999 fixed bg-near-black w-100">
-      <nav className="dt w-100 border-box pv3 ph2 ph5-ns debug">
+      <nav className="dt w-100 border-box pv3 ph2 ph5-ns">
         <div className="dtc v-mid tl">
           <Link
             className="link dim light-gray f6 f3-ns fw6-ns dib ttu tracked-ns"
