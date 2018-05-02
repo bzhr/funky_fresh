@@ -16,6 +16,7 @@
     "gatsby-source-filesystem": "^1.5.9",
     "gatsby-transformer-remark": "^1.7.22",
     "gatsby-transformer-sharp": "^1.6.15",
+    "netlify-cms": "^1.7.0",
     "npm": "^5.6.0",
     "react": "^15.6.2",
     "react-icons": "^2.2.7",
