@@ -15,6 +15,7 @@ export default ({ node }) => {
   const mailLink = data.mail;
   const instaLink = data.instagram;
   const mixcloudLink = data.mixcloud;
+  console.log(djUrl, (scLink))
 
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
@@ -36,32 +37,32 @@ export default ({ node }) => {
         </div>
 
         <div className="" style={{height: "6rem"}}>
-          <div className="fl w-third w-20-ns tc">
+          <div className="fl w-third w-25-ns tc">
             {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
           </div>
-          <div className="fl w-third w-20-ns tc">
+          <div className="fl w-third w-25-ns tc">
             {twitterLink ? (
               <SocialMediaButton type={"tw"} link={twitterLink} />
             ) : null}
           </div>
-          <div className="fl w-third w-20-ns tc">
+          <div className="fl w-third w-25-ns tc">
             {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
           </div>
-          {/*<div className="fl w-third w-20-ns tc">
+          {/*<div className="fl w-third w-25-ns tc">
             {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
           </div>*/}
-          <div className="fl w-third w-20-ns tc">
+          <div className="fl w-third w-25-ns tc">
             {mailLink ? (
               <SocialMediaButton type={"mail"} link={mailLink} />
             ) : null}
           </div>
-          <div className="fl w-third w-20-ns tc">
+          <div className="fl w-third w-25-ns tc">
             {instaLink ? (
               <SocialMediaButton type={"insta"} link={instaLink} />
             ) : null}
           </div>
-          <div className="fl w-third w-20-ns tc">
-            {instaLink ? (
+          <div className="fl w-third w-25-ns tc">
+            {mixcloudLink ? (
               <SocialMediaButton type={"mixcl"} link={mixcloudLink} />
             ) : null}
           </div>
