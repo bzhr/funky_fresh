@@ -25,13 +25,13 @@ export default class MainPage extends React.Component {
     const moreLess = this.state.expanded ? "less" : "more";
 
     const excerpt = (
-      <p className="w-100 center lh-copy pa3 tc measure white f3">
+      <p className="w-100 center lh-copy pa3 tc measure white f3-ns f4">
         {about.excerpt}
       </p>
     );
     const fullInfo = (
       <div
-        className="w-100 center lh-copy pa3 tc measure white f3"
+        className="w-100 center lh-copy pa3 tc measure white f3-ns f4"
         dangerouslySetInnerHTML={{ __html: about.html }}
       />
     );
@@ -61,8 +61,7 @@ export default class MainPage extends React.Component {
               </div>
             </article>
             <div className="fl w-50-ns w-100 vh-100 dt">
-              <div className="
-                dtc v-mid tc white">
+              <div className="dtc v-mid tc white">
                 {info}
                 <button
                   className="f6 link  ba ph3 pv2 mb2 dib hover-bg-gray"
