@@ -47,3 +47,4 @@ collections:
       - {label: "Instagram", name: "instagram", widget: "string", required: false}
       - {label: "Mixcloud", name: "mixcloud", widget: "string", required: false}
       - {label: "Promo pack", name: "promoPack", widget: "file", default: "/static/media/PromoPack.zip", required: false}
+      - {label: "Email", name: "mail", widget: "string", required: false}
