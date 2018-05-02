@@ -36,11 +36,11 @@ export default (data) => {
   }
   return(
     <section className="">
-      <a className='link dim gray dib br-100 pa1 pa2-ns ma1 bg-near-white ba'
+      <a className='link dim gray dib br-100 ma1 bg-near-white ba'
          target="_blank" href={href}
          title={data.link}
          >
-        <Component fill="near-black" className="v-mid dtc"></Component>
+        <Component fill="near-black" className="ma1 ma2-ns v-mid dtc"></Component>
       </a>
     </section>
   );
