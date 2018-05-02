@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-image`,
     `gatsby-plugin-typography`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -51,11 +52,11 @@ module.exports = {
         pathToConfigModule: `src/utils/typography.js`
       }
     },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
-      }
-    }
+    // {
+    //   resolve: "gatsby-plugin-netlify-cms",
+    //   options: {
+    //     modulePath: `${__dirname}/src/cms/cms.js`
+    //   }
+    // }
   ]
 };
