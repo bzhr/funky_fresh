@@ -63,5 +63,6 @@ img: /static/media/DJ-Drazi-Drags.JPG
 instagram: 'https://www.instagram.com/drazidrags/'
 mixcloud: 'https://www.mixcloud.com/drazidrags/'
 promoPack: ''
+mail: drazidrags@gmail.com
 ---
 
