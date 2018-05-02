@@ -7,52 +7,25 @@ import Facebook from "react-icons/lib/fa/facebook";
 
 export default () => {
   return (
-    <header className="z-999 fixed bg-near-black w-100 ph3-ns">
-      <div className="fl h-100">
-        <nav className="h3 fw6 ttu tracked-ns">
-          {/*<Link
-            className="v-mid fl w-50 link dim light-gray dib f3-ns f4"
-            style={{ outline: 0 }}
-            to="/"
-            title="Funky Fresh"
-          >
-            <p className="dib v-mid">Funky Fresh</p>
-          </Link>
+    <header className="z-999 fixed bg-near-black w-100">
+      <nav className="dt w-100 border-box pv3 ph2 ph5-ns debug">
+        <div className="dtc v-mid tl">
           <Link
-            className="fl w-50 link dim light-gray dib f3-ns f4"
-            style={{ outline: 0 }}
-            to="/blog"
-            title="Blog"
+            className="link dim light-gray f6 f3-ns fw6-ns dib ttu tracked-ns"
+            to="/"
+            style={{ outline: "none" }}
           >
-            <p>Blog</p>
-          </Link>*/}
-            <div className="fl h-100 dt pa3-ns ph1">
-            <div className="dtc v-mid">
-              <Link
-                className="dim light-gray link dib f3-ns f6 fw8 pa1"
-                to="/"
-                style={{outline: "none"}}
-              >
-                <p style={{whiteSpace: "nowrap"}} className="dib h2 dtc v-mid">Funky Fresh</p>
-              </Link>
-            </div>
-          </div>
+            Funky Fresh
+          </Link>
 
-          <div className="fl h-100 dt pa3-ns ph1">
-          <div className="dtc v-mid">
-            <Link
-              className="link dim light-gray dib f3-ns f6 fw8 pa1"
-              to="/blog"
-              style={{outline: "none"}}
-            >
-              <p className="dib h2 dtc v-mid">Blog</p>
-            </Link>
-          </div>
+          <Link
+            className="link dim light-gray f6 f3-ns fw6-ns dib ml3 ml4-ns ttu tracked-ns"
+            to="/blog"
+            style={{ outline: "none" }}
+          >
+            Blog
+          </Link>
         </div>
-        </nav>
-
-      </div>
-      <div className="fr  h3">
         <div className="fr h-100 dt pa2 hover-bg-gray">
           <div className="dtc v-mid">
             <a
@@ -102,7 +75,58 @@ export default () => {
             </a>
           </div>
         </div>
-      </div>
+      </nav>
+      {/* <div className="fr  h3 w-40">
+        <div className="fr h-100 dt pa2 hover-bg-gray">
+          <div className="dtc v-mid">
+            <a
+              className="b--light-gray bg-animate"
+              href="https://www.mixcloud.com/Funky_Fresh/"
+              title="Mixcloud"
+              target="_blank"
+            >
+              <Mixcloud fill="white" className="dib h2 w2-l w2-m w1" />
+            </a>
+          </div>
+        </div>
+        <div className="fr h-100 dt pa2 hover-bg-gray">
+          <div className="dtc v-mid">
+            <a
+              className="b--light-gray bg-animate "
+              href="https://soundcloud.com/funky-fresh-211335302"
+              title="SoundCloud"
+              target="_blank"
+            >
+              <SoundCloud fill="white" className="dib h2 w2-l w2-m w1" />
+            </a>
+          </div>
+        </div>
+        <div className="fr h-100 dt pa2 hover-bg-gray">
+          <div className="dtc v-mid">
+            <a
+              className="b--light-gray bg-animate"
+              href="https://www.instagram.com/funkyfresh_sk/"
+              title="Instagram"
+              target="_blank"
+            >
+              <Instagram fill="white" className="dib h2 w2-l w2-m w1" />
+            </a>
+          </div>
+        </div>
+
+        <div className="fr h-100 dt pa2 hover-bg-gray">
+          <div className="dtc v-mid">
+            <a
+              className="b--light-gray bg-animate"
+              href="https://www.facebook.com/Funky-Fresh-1674317282822955/"
+              title="Facebook"
+              target="_blank"
+            >
+              <Facebook fill="white" className="dib h2 w2-l w2-m w1" />
+            </a>
+          </div>
+        </div>
+      </div> */}
     </header>
   );
 };
