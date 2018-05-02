@@ -22,8 +22,8 @@ export default class MainPage extends React.Component {
   render() {
     const about = this.props.about;
     const logoData = this.props.logoData;
-    const moreLess = this.state.expanded ? "less" : "more"
-    
+    const moreLess = this.state.expanded ? "less" : "more";
+
     const excerpt = (
       <p className="w-100 center lh-copy pa3 tc measure white f3">
         {about.excerpt}
@@ -35,7 +35,7 @@ export default class MainPage extends React.Component {
         dangerouslySetInnerHTML={{ __html: about.html }}
       />
     );
-    const expanded = this.state.expanded
+    const expanded = this.state.expanded;
     function getMoreTextDiv(expanded) {
       if (expanded) {
         return fullInfo;
@@ -43,7 +43,7 @@ export default class MainPage extends React.Component {
         return excerpt;
       }
     }
-    const info = getMoreTextDiv(expanded)
+    const info = getMoreTextDiv(expanded);
     return (
       <div className="pt5 pv1-ns w-100">
         <RenderBasedOnSize />
@@ -64,7 +64,12 @@ export default class MainPage extends React.Component {
               <div className="
                 dtc v-mid tc white">
                 {info}
-                <button className="f6 link dim ba ph3 pv2 mb2 dib" onClick={this.expandedText}>Read {moreLess}</button>
+                <button
+                  className="f6 link  ba ph3 pv2 mb2 dib hover-bg-gray"
+                  onClick={this.expandedText}
+                >
+                  Read {moreLess}
+                </button>
               </div>
             </div>
           </div>
