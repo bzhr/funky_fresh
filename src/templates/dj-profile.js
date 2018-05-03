@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Soundcloud from "react-soundcloud-widget";
 import URL from "url-parse";
+import Img from "gatsby-image";
 
 import SocialMediaButton from "../components/SocialMediaButton";
 import MixcloudEmbed from "../components/MixcloudEmbed";
@@ -17,6 +18,9 @@ export default function Template({ data }) {
   const scLink = data.markdownRemark.frontmatter.soundcloud;
   const promoMixLink = data.markdownRemark.frontmatter.promoMix;
   const mailAddress = data.markdownRemark.frontmatter.mail;
+  const instaLink = data.markdownRemark.frontmatter.instagram;
+  const bio = data.markdownRemark.frontmatter.Bio;
+  const photo = data.markdownRemark.fields.image;
 
   let url = "";
   function createPromoMix() {
@@ -25,20 +29,18 @@ export default function Template({ data }) {
         url = URL(promoMixLink);
         const user = url.pathname.split("/")[1];
         const mixName = url.pathname.split("/")[2];
-        url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&autoplay=0&feed=%2F${
-          user
-        }%2F${mixName}%2F`;
-        const PromoMix = MixcloudEmbed
-        return PromoMix
+        url = `https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&autoplay=0&feed=%2F${user}%2F${mixName}%2F`;
+        const PromoMix = MixcloudEmbed;
+        return PromoMix;
       } else {
-        const PromoMix = Soundcloud
-        return PromoMix
+        const PromoMix = Soundcloud;
+        return PromoMix;
       }
     }
   }
-  const PromoMix = createPromoMix()
+  const PromoMix = createPromoMix();
   if (url == "") {
-    url = promoMixLink
+    url = promoMixLink;
   }
 
   return (
@@ -49,31 +51,42 @@ export default function Template({ data }) {
           {data.markdownRemark.frontmatter.title}
         </h1>
         <div className="cf pa2 measure">
-            <div className="fl w-20 tc">
-              {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
-            </div>
-            <div className="fl h-25 w-20 tc">
-              {twitterLink ? (
-                <SocialMediaButton type={"tw"} link={twitterLink} />
-              ) : null}
-            </div>
-            <div className="fl w-20 tc">
-              {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
-            </div>
-            {/*<div className="fl w-20 tc">
+          <Img
+            sizes={photo.childImageSharp.sizes}
+            className="ma3-ns ma2 db measure"
+            alt="DJ"
+          />
+          <div className="fl w-20 tc">
+            {fbLink ? <SocialMediaButton type={"fb"} link={fbLink} /> : null}
+          </div>
+          <div className="fl h-25 w-20 tc">
+            {twitterLink ? (
+              <SocialMediaButton type={"tw"} link={twitterLink} />
+            ) : null}
+          </div>
+          <div className="fl w-20 tc">
+            {url ? <SocialMediaButton type={"sc"} link={url} /> : null}
+          </div>
+          {/*<div className="fl w-20 tc">
               {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
             </div>*/}
-            <div className="fl w-20 tc">
-              {mailAddress ? (
-                <SocialMediaButton type={"mail"} link={mailAddress} />
-              ) : null}
-            </div>
+          <div className="fl w-20 tc">
+            {mailAddress ? (
+              <SocialMediaButton type={"mail"} link={mailAddress} />
+            ) : null}
           </div>
+          <div className="fl w-20 tc">
+            {instaLink ? (
+              <SocialMediaButton type={"insta"} link={instaLink} />
+            ) : null}
+          </div>
+        </div>
 
-        <div
+        {/* <div
           className="measure lh-copy pv5 pv2-ns"
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
+        /> */}
+        <div className="measure lh-copy pv5 pv2-ns">{bio}</div>
       </section>
       <footer className="bottom-0 bg-near-black w-100 tc-l z-998 fixed">
         {promoMixLink ? <PromoMix url={url} /> : null}
@@ -95,6 +108,20 @@ export const DjProfileQuery = graphql`
         soundcloud
         mail
         promoMix
+        Bio
+        instagram
+      }
+      fields {
+        image {
+          childImageSharp {
+            original {
+              src
+            }
+            sizes(maxWidth: 500) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
