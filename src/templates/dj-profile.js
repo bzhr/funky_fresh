@@ -21,6 +21,7 @@ export default function Template({ data }) {
   const instaLink = data.markdownRemark.frontmatter.instagram;
   const bio = data.markdownRemark.html
   const photo = data.markdownRemark.fields.image;
+  console.log()
 
   let url = "";
   function createPromoMix() {
@@ -64,9 +65,6 @@ export default function Template({ data }) {
               <SocialMediaButton type={"tw"} link={twitterLink} />
             ) : null}
           </div>
-          <div className="fl w-20 tc">
-            {url ? <SocialMediaButton type={"sc"} link={url} /> : null}
-          </div>
           {/*<div className="fl w-20 tc">
               {ytLink ? <SocialMediaButton type={"yt"} link={ytLink} /> : null}
             </div>*/}
@@ -78,6 +76,11 @@ export default function Template({ data }) {
           <div className="fl w-20 tc">
             {instaLink ? (
               <SocialMediaButton type={"insta"} link={instaLink} />
+            ) : null}
+          </div>
+          <div className="fl w-20 tc">
+            {scLink ? (
+              <SocialMediaButton type={"sc"} link={scLink} />
             ) : null}
           </div>
         </div>
