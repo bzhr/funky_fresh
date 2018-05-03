@@ -9,5 +9,3 @@ mail: djgoce [at] gmail.com
 mixcloud: https://www.mixcloud.com/DJ_Goce/
 twitter: https://twitter.com/DJGoce
 ---
-
-![graphql](/img/DJ-Goce.JPG)

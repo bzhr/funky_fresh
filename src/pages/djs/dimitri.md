@@ -10,7 +10,6 @@ img: /static/media/DJ-Dimitri-from-Chair.jpg
 
 ---
 
-![graphql](/img/DJ-Dimitri-from-Chair.jpg)
 
 Dimitri from Chair(Pikisipi) is one of the Architects and co-founder of the Macedonian Hip Hop working with the two most influential Hip Hop bands in Macedonia(Cista Okolina & SAF)..
 As a premier MC and Lyricist despite his live performances with his bands,he worked as a HipHopPromoter/Reprezent on the electronic media (TV&Radio).

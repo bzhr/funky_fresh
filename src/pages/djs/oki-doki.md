@@ -7,5 +7,3 @@ instagram: https://www.instagram.com/dj_oky_doky/
 img: /static/media/DJ-Oky-Doky.JPG
 mail: zoran_kocoski [at] yahoo.com
 ---
-
-![graphql](/img/DJ-Oky-Doky.JPG)

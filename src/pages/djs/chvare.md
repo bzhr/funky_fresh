@@ -8,5 +8,3 @@ img: /static/media/DJ-Chvare.JPG
 mail: dj.cvare [at] gmail.com
 mixcloud: https://www.mixcloud.com/afrobeatrules/
 ---
-
-![graphql](/img/DJ-Chvare.JPG)
