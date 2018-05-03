@@ -47,6 +47,7 @@ export const frontPageQuery = graphql`
             mail
             instagram
             mixcloud
+            promoPack
           }
           fields {
             image {

@@ -15,6 +15,7 @@ export default ({ node }) => {
   const mailLink = data.mail;
   const instaLink = data.instagram;
   const mixcloudLink = data.mixcloud;
+  const promoPack = data.promoPack
   console.log(djUrl, (scLink))
 
   return (
@@ -69,7 +70,7 @@ export default ({ node }) => {
         </div>
         <a
           className="w-100 link db bg-animate bg-near-black hover-bg-silver f6 br1"
-          href="#"
+          href={promoPack}
         >
           <div className="w-100 h2 dt hover-bg-silver">
             <p className="dtc v-mid pa3 fw4 f6 h-100 lh-copy tc white">
