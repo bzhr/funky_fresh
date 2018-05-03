@@ -13,7 +13,7 @@ export default () => {
           <Link
             className="link dim light-gray f6 f3-ns fw6-ns dib ttu tracked-ns"
             to="/"
-            style={{ outline: "none" }}
+            style={{ outline: "none", whiteSpace: "nowrap" }}
           >
             Funky Fresh
           </Link>
