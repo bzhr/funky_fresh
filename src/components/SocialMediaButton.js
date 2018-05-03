@@ -36,7 +36,7 @@ export default (data) => {
   }
   return(
     <section className="">
-      <a className='link dim gray dib br-100 ma1 bg-near-white ba'
+      <a className='link dim gray dib br-100 ma1 bg-moon-gray ba'
          target="_blank" href={href}
          title={data.link}
          >
