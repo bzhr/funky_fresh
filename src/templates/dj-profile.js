@@ -19,20 +19,23 @@ export default function Template({ data }) {
   const promoMixLink = data.markdownRemark.frontmatter.promoMix;
   const mailAddress = data.markdownRemark.frontmatter.mail;
   const instaLink = data.markdownRemark.frontmatter.instagram;
-  const bio = data.markdownRemark.html
+  const bio = data.markdownRemark.html;
   const photo = data.markdownRemark.fields.image;
-  const mixcloud = data.markdownRemark.frontmatter.mixcloud
-  const promoPack = data.markdownRemark.frontmatter.promoPack
-  const files = data.allFile.edges
+  const mixcloud = data.markdownRemark.frontmatter.mixcloud;
+  const promoPack = data.markdownRemark.frontmatter.promoPack;
+  const files = data.allFile.edges;
   let fileLinks;
-  let fileLink = null
+  let fileLink = null;
   if (!!promoPack) {
-    console.log("there's promo pack")
-  let fileLinks = files.filter(function(el){return promoPack.includes(el.node.relativePath)})
-  if (fileLinks.length > 0) {
-    console.log(fileLinks)
-    fileLink = fileLinks[0].node.publicURL
-  }}
+    console.log("there's promo pack");
+    let fileLinks = files.filter(function(el) {
+      return promoPack.includes(el.node.relativePath);
+    });
+    if (fileLinks.length > 0) {
+      console.log(fileLinks);
+      fileLink = fileLinks[0].node.publicURL;
+    }
+  }
   let url = "";
   function createPromoMix() {
     if (promoMixLink) {
@@ -89,9 +92,7 @@ export default function Template({ data }) {
             ) : null}
           </div>
           <div className="fl w-20 tc">
-            {scLink ? (
-              <SocialMediaButton type={"sc"} link={scLink} />
-            ) : null}
+            {scLink ? <SocialMediaButton type={"sc"} link={scLink} /> : null}
           </div>
 
           <div className="fl w-20 tc">
@@ -100,16 +101,14 @@ export default function Template({ data }) {
             ) : null}
           </div>
         </div>
-        {fileLink? <a href={fileLink}>
-          <button
-            className="f6 link dim ph3 pv2 ma3-ns ma2 db measure dib white bg-mid-gray"
-          >
-            Download Promo Pack
-          </button>
-        </a> : null}
-        <h1 className="ttu tracked f1 fw4 pt4 f-headline-m lh-solid">
-          Bio
-        </h1>
+        {fileLink ? (
+          <a href={fileLink} style={{ outline: "none" }}>
+            <button className="f6 link dim ph3 pv2 ma3-ns ma2 db measure dib white bg-mid-gray">
+              Download Promo Pack
+            </button>
+          </a>
+        ) : null}
+        <h1 className="ttu tracked f1 fw4 pt4 f-headline-m lh-solid">Bio</h1>
 
         <div
           className="measure lh-copy pv5 pv2-ns"
@@ -154,10 +153,10 @@ export const DjProfileQuery = graphql`
       }
     }
 
-    allFile(filter: {extension: {eq: "zip"}}) {
+    allFile(filter: { extension: { eq: "zip" } }) {
       edges {
         node {
-          publicURL,
+          publicURL
           id
           relativePath
         }

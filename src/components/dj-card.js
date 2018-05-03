@@ -87,6 +87,7 @@ export default ({ node, files }) => {
         <a
           className="w-100 link db bg-animate b--black bg-near-black hover-bg-silver f6"
           href={fileLink}
+          style={{ outline: "none"}}
         >
           <div className="w-100 h2 dt hover-bg-moon-gray">
             <p className="dtc v-mid pa3 fw4 f6 h-100 lh-copy tc white">
