@@ -20,7 +20,7 @@ export default ({ node }) => {
 
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
-      <article className="center hide-child relative ba b--silver mw5 db bg-silver">
+      <article className="center hide-child relative ba mw5 db bg-silver">
         <Link to={djUrl}>
           <Img
             sizes={img.sizes}
@@ -31,11 +31,11 @@ export default ({ node }) => {
         </Link>
         <div className="w-100 center bt b--black-20">
           <Link
-            className="w-100 h-100 ttu tracked tc db link black hover-black-60"
+            className="w-100 h-100 ttu tracked tc db link near-white hover-black-60"
             to={djUrl}
           >
             <h2
-              className="fw5 f4-ns f6 pt2 v-mid lh-title"
+              className="fw5 f4-ns f6 pt2 ph2 v-mid lh-title"
               style={{ height: "3rem" }}
             >
               {" "}
@@ -76,7 +76,7 @@ export default ({ node }) => {
           </div>
         </div>
         <a
-          className="w-100 link db bg-animate bg-near-black hover-bg-silver f6 br1"
+          className="w-100 link db bg-animate b--black bg-near-black hover-bg-silver f6"
           href={promoPack}
         >
           <div className="w-100 h2 dt hover-bg-moon-gray">
