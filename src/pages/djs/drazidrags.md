@@ -8,7 +8,7 @@ promoMix: 'https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/'
 img: /static/media/DJ-Drazi-Drags.JPG
 instagram: 'https://www.instagram.com/drazidrags/'
 mixcloud: 'https://www.mixcloud.com/drazidrags/'
-promoPack: ''
+promoPack: 'https://dl.dropbox.com/s/qgfo4kgxn1bfqz6/crm_products.csv?dl=0'
 mail: drazidrags@gmail.com
 ---
 ## Beginnings
