@@ -8,7 +8,7 @@ promoMix: 'https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/'
 img: /static/media/g38a7978.jpg
 instagram: 'https://www.instagram.com/drazidrags/'
 mixcloud: 'https://www.mixcloud.com/drazidrags/'
-promoPack: 'https://dl.dropbox.com/s/qgfo4kgxn1bfqz6/crm_products.csv?dl=0'
+promoPack: /static/media/dj-drazi-drags-funky-fresh-sk.zip
 mail: drazidrags@gmail.com
 ---
 ## Beginnings
