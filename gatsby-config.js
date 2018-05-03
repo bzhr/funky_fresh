@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Funky Fresh Website`,
-    siteUrl: "https://funky-fresh.netlify.com"
+    siteUrl: "https://www.funkyfreshdjs.com"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
