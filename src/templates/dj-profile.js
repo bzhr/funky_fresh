@@ -23,7 +23,16 @@ export default function Template({ data }) {
   const photo = data.markdownRemark.fields.image;
   const mixcloud = data.markdownRemark.frontmatter.mixcloud
   const promoPack = data.markdownRemark.frontmatter.promoPack
-
+  const files = data.allFile.edges
+  let fileLinks;
+  let fileLink = null
+  if (!!promoPack) {
+    console.log("there's promo pack")
+  let fileLinks = files.filter(function(el){return promoPack.includes(el.node.relativePath)})
+  if (fileLinks.length > 0) {
+    console.log(fileLinks)
+    fileLink = fileLinks[0].node.publicURL
+  }}
   let url = "";
   function createPromoMix() {
     if (promoMixLink) {
@@ -49,7 +58,7 @@ export default function Template({ data }) {
     <div className="bg-light-gray">
       <section className="mb5 pa5-ns bt w-100">
         <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
-        <h1 className="ttu tracked f1 fw4 pt4">
+        <h1 className="ttu tracked pa3 pa1-ns f1 fw4 pt4">
           {data.markdownRemark.frontmatter.title}
         </h1>
         <div className="cf pa2 measure">
@@ -91,13 +100,13 @@ export default function Template({ data }) {
             ) : null}
           </div>
         </div>
-        <a href={promoPack}>
+        {fileLink? <a href={fileLink}>
           <button
             className="f6 link dim ph3 pv2 ma3-ns ma2 db measure dib white bg-mid-gray"
           >
             Download Promo Pack
           </button>
-        </a>
+        </a> : null}
         <h1 className="ttu tracked f1 fw4 pt4 f-headline-m lh-solid">
           Bio
         </h1>
@@ -141,6 +150,16 @@ export const DjProfileQuery = graphql`
               ...GatsbyImageSharpSizes
             }
           }
+        }
+      }
+    }
+
+    allFile(filter: {extension: {eq: "zip"}}) {
+      edges {
+        node {
+          publicURL,
+          id
+          relativePath
         }
       }
     }

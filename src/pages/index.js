@@ -7,6 +7,8 @@ import Djs from "../components/djs";
 
 export default class IndexPage extends React.Component {
   render() {
+    console.log(this.props.data.allFile)
+    const files = this.props.data.allFile
     const data = this.props.data.allMarkdownRemark.edges;
     const logoData = this.props.data.file.childImageSharp;
     const about = data.filter(
@@ -23,7 +25,7 @@ export default class IndexPage extends React.Component {
     return (
       <section className="bg-near-black">
         <Main about={about} logoData={logoData} />
-        <Djs data={orderedDjs} />
+        <Djs data={orderedDjs} files={files} />
       </section>
     );
   }
@@ -68,6 +70,15 @@ export const frontPageQuery = graphql`
       childImageSharp {
         sizes(maxWidth: 200) {
           ...GatsbyImageSharpSizes
+        }
+      }
+    }
+    allFile(filter: {extension: {eq: "zip"}}) {
+      edges {
+        node {
+          publicURL,
+          id
+          relativePath
         }
       }
     }

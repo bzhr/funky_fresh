@@ -1,9 +1,9 @@
 import React from "react";
-import Link from "gatsby-link";
+import Link, { withPrefix } from "gatsby-link";
 import Img from "gatsby-image";
 import SocialMediaButton from "./SocialMediaButton";
 
-export default ({ node }) => {
+export default ({ node, files }) => {
   const data = node.frontmatter;
 
   const img = node.fields.image.childImageSharp;
@@ -16,7 +16,16 @@ export default ({ node }) => {
   const instaLink = data.instagram;
   const mixcloudLink = data.mixcloud;
   const promoPack = data.promoPack;
-  console.log(djUrl, scLink);
+  
+  let fileLinks;
+  let fileLink = null
+  if (!!promoPack) {
+    console.log("there's promo pack")
+  let fileLinks = files.edges.filter(function(el){return promoPack.includes(el.node.relativePath)})
+  if (fileLinks.length > 0) {
+    console.log(fileLinks)
+    fileLink = fileLinks[0].node.publicURL
+  }}
 
   return (
     <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
@@ -77,7 +86,7 @@ export default ({ node }) => {
         </div>
         <a
           className="w-100 link db bg-animate b--black bg-near-black hover-bg-silver f6"
-          href={promoPack}
+          href={fileLink}
         >
           <div className="w-100 h2 dt hover-bg-moon-gray">
             <p className="dtc v-mid pa3 fw4 f6 h-100 lh-copy tc white">
