@@ -22,7 +22,7 @@ export default function Template({ data }) {
   const bio = data.markdownRemark.html
   const photo = data.markdownRemark.fields.image;
   const mixcloud = data.markdownRemark.frontmatter.mixcloud
-  console.log()
+  const promoPack = data.markdownRemark.frontmatter.promoPack
 
   let url = "";
   function createPromoMix() {
@@ -91,6 +91,16 @@ export default function Template({ data }) {
             ) : null}
           </div>
         </div>
+        <a href={promoPack}>
+          <button
+            className="f6 link dim ph3 pv2 ma3-ns ma2 db measure dib white bg-mid-gray"
+          >
+            Download Promo Pack
+          </button>
+        </a>
+        <h1 className="ttu tracked f1 fw4 pt4 f-headline-m lh-solid">
+          Bio
+        </h1>
 
         <div
           className="measure lh-copy pv5 pv2-ns"
@@ -119,6 +129,7 @@ export const DjProfileQuery = graphql`
         promoMix
         instagram
         mixcloud
+        promoPack
       }
       fields {
         image {
