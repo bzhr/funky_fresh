@@ -16,8 +16,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Image Before Text", name: "image", widget: "image"}
-      - {label: "Image After Text", name: "image2", widget: "image", required: "false"}
+      - {label: "Image Before Text", name: "image", widget: "image", required: false}
+      - {label: "Image After Text", name: "image2", widget: "image", required: false}
 
   - name: "about"
     label: "За Нас"
