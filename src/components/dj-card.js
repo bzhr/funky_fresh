@@ -28,7 +28,7 @@ export default ({ node, files }) => {
   }}
 
   return (
-    <section className="fl tc w-50 w-third-m w-25-l pa2" key={title}>
+    <section className="fl tc w-50 w-third-m w-25-l pa2" key={title} >
       <article className="center hide-child relative ba mw5 db bg-silver">
         <Link to={djUrl}>
           <Img
@@ -45,7 +45,7 @@ export default ({ node, files }) => {
           >
             <h2
               className="fw5 f4-ns f6 pt2 ph2 v-mid lh-title"
-              style={{ height: "3rem" }}
+              style={{ height: "3rem", outline: "none" }}
             >
               {" "}
               {title}{" "}
