@@ -38,7 +38,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "DJ"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Bio", name: "Bio", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Facebook", name: "fb", widget: "string", required: false}
       - {label: "Twitter", name: "twitter", widget: "string", required: false}
       - {label: "Soundcloud", name: "soundcloud", widget: "string", required: false}
