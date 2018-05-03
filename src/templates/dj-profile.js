@@ -21,6 +21,7 @@ export default function Template({ data }) {
   const instaLink = data.markdownRemark.frontmatter.instagram;
   const bio = data.markdownRemark.html
   const photo = data.markdownRemark.fields.image;
+  const mixcloud = data.markdownRemark.frontmatter.mixcloud
   console.log()
 
   let url = "";
@@ -83,6 +84,12 @@ export default function Template({ data }) {
               <SocialMediaButton type={"sc"} link={scLink} />
             ) : null}
           </div>
+
+          <div className="fl w-20 tc">
+            {mixcloud ? (
+              <SocialMediaButton type={"sc"} link={mixcloud} />
+            ) : null}
+          </div>
         </div>
 
         <div
@@ -111,6 +118,7 @@ export const DjProfileQuery = graphql`
         mail
         promoMix
         instagram
+        mixcloud
       }
       fields {
         image {
