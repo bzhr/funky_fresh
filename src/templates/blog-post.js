@@ -11,7 +11,7 @@ export default function Template({ data }) {
     <section className="bg-light-gray pa5-ns bt w-100 pa3">
       <Helmet title={`Blog | ${post.frontmatter.title}`} />
       <article className="">
-        <h1 className="f3 f1-m f-headline-l ttu tracked f1 fw3 pt5">
+        <h1 className="f1-ns f3 f1-m  f-headline ttu tracked fw3 pt5">
           {post.frontmatter.title}
         </h1>
         <p className="ma3-ns ma2 f4 lh-copy gray mv0">
