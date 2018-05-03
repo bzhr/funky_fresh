@@ -46,5 +46,5 @@ collections:
       - {label: "Image", name: "img", widget: "image"}
       - {label: "Instagram", name: "instagram", widget: "string", required: false}
       - {label: "Mixcloud", name: "mixcloud", widget: "string", required: false}
-      - {label: "Promo pack", name: "promoPack", widget: "string"}
+      - {label: "Promo pack", name: "promoPack", widget: "file", required: false}
       - {label: "Email", name: "mail", widget: "string", required: false}
