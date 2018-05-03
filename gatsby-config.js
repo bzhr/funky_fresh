@@ -27,13 +27,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `djs`,
-        path: `${__dirname}/src/pages/djs`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `imgLib`,
         path: `${__dirname}/static/media/`
       }

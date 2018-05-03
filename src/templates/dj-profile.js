@@ -19,7 +19,7 @@ export default function Template({ data }) {
   const promoMixLink = data.markdownRemark.frontmatter.promoMix;
   const mailAddress = data.markdownRemark.frontmatter.mail;
   const instaLink = data.markdownRemark.frontmatter.instagram;
-  const bio = data.markdownRemark.frontmatter.Bio;
+  const bio = data.markdownRemark.html
   const photo = data.markdownRemark.fields.image;
 
   let url = "";
@@ -82,11 +82,10 @@ export default function Template({ data }) {
           </div>
         </div>
 
-        {/* <div
+        <div
           className="measure lh-copy pv5 pv2-ns"
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        /> */}
-        <div className="measure lh-copy pv5 pv2-ns">{bio}</div>
+          dangerouslySetInnerHTML={{ __html: bio }}
+        />
       </section>
       <footer className="bottom-0 bg-near-black w-100 tc-l z-998 fixed">
         {promoMixLink ? <PromoMix url={url} /> : null}
@@ -108,7 +107,6 @@ export const DjProfileQuery = graphql`
         soundcloud
         mail
         promoMix
-        Bio
         instagram
       }
       fields {
