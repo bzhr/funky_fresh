@@ -59,7 +59,7 @@ export default function Template({ data }) {
 
   return (
     <div className="bg-light-gray">
-      <section className="mb5 pa5-ns bt w-100">
+      <section className="mb5 pa5-ns pa3 bt w-100">
         <Helmet title={`DJ | ${data.markdownRemark.frontmatter.title}`} />
         <h1 className="ttu tracked pa3 pa1-ns f1 fw4 pt4">
           {data.markdownRemark.frontmatter.title}
