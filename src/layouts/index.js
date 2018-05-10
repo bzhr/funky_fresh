@@ -19,7 +19,7 @@ const TemplateWrapper = ({ children }) => (
     <meta property="og:type" content="main" />
     <meta property="og:title" content="Funky Fresh DJs" />
     <meta property="og:description" content="Funky Frsh DJs info, news and booking" />
-    <meta property="og:image" content="/media/funkyfreshdj.png" />
+    <meta property="og:image" content="https://www.funkyfreshdjs.com/media/funkyfreshdj.png" />
     </Helmet>
     <NavBar />
     {children()}
