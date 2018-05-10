@@ -12,9 +12,13 @@ const Nav = () => (
 const TemplateWrapper = ({ children }) => (
   <div className="">
     <Helmet title="Funky Fresh">
-    <meta property="og:title" content="Funky Fresh DJs"/>
-    <meta property="og:type" content="music"/>
-    <meta property="og:url" content="http://www.funkyfreshdjs.com"/>
+    {/* OpenGraph */}
+    <meta property="og:locale" content="en-US" />
+    <meta property="og:site_name" content="Funky Fresh DJs" />
+    <meta property="og:url" content="https://www.funkyfreshdjs.com" />
+    <meta property="og:type" content="main" />
+    <meta property="og:title" content="Funky Fresh DJs" />
+    <meta property="og:description" content="Funky Frsh DJs info, news and booking" />
     <meta property="og:image" content="/media/funkyfreshdj.png" />
     </Helmet>
     <NavBar />
