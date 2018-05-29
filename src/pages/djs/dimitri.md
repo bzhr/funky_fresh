@@ -1,13 +1,12 @@
 ---
-templateKey: 'dj-profile'
-path: /dimitri-from-chair
+templateKey: dj-profile
+path: /dj-dimitri-from-chair
 title: DJ Dimitri from Chair
-fb: https://www.facebook.com/DJ-Dimitri-from-Chair-102381499873714//
-soundcloud: https://soundcloud.com/dimitri-from-chair
-mixcloud: https://www.mixcloud.com/mitko-pikisipi-gahstarovski/
-mail: pikisipi33 [at] gmail.com
+fb: 'https://www.facebook.com/DJ-Dimitri-from-Chair-102381499873714//'
+soundcloud: 'https://soundcloud.com/dimitri-from-chair'
 img: /static/media/DJ-Dimitri-from-Chair.jpg
-
+mixcloud: 'https://www.mixcloud.com/mitko-pikisipi-gahstarovski/'
+mail: 'pikisipi33 [at] gmail.com'
 ---
 
 
