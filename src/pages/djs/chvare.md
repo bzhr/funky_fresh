@@ -1,6 +1,6 @@
 ---
 templateKey: dj-profile
-path: /chvare
+path: /dj-chvare
 title: DJ Chvare
 fb: 'https://www.facebook.com/djchvare/'
 img: /static/media/DJ-Chvare.JPG
