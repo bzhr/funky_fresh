@@ -1,6 +1,6 @@
 ---
 templateKey: dj-profile
-path: /drazidrags
+path: /dj-drazi-drags
 title: DJ Drazi Drags
 fb: 'https://www.facebook.com/djdrazidrags/'
 twitter: 'https://twitter.com/drazi_drags'
