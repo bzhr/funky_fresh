@@ -5,7 +5,7 @@ title: DJ Drazi Drags
 fb: 'https://www.facebook.com/djdrazidrags/'
 twitter: 'https://twitter.com/drazi_drags'
 promoMix: 'https://www.mixcloud.com/drazidrags/dj-drazi-drags-beatcoin/'
-img: /static/media/g38a8138.jpg
+img: /static/media/g38a7973.jpg
 instagram: 'https://www.instagram.com/drazidrags/'
 mixcloud: 'https://www.mixcloud.com/drazidrags/'
 promoPack: /static/media/dj-drazi-drags-funky-fresh-sk.zip
