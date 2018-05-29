@@ -1,6 +1,6 @@
 ---
 templateKey: dj-profile
-path: /oky-doky
+path: /dj-oky-doky
 title: DJ Oky Doky
 fb: 'https://www.facebook.com/DjOkyDoky/'
 img: /static/media/DJ-Oky-Doky.JPG
